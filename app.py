@@ -73,20 +73,27 @@ st.markdown("""
     }
 
 div.stButton > button {
-        width: 100%;           /* سيأخذ العرض الكامل للعمود الذي يوضع فيه */
-        max-width: 400px;      /* تحديد عرض أقصى ليبقى متناسقاً */
+        /* العرض: نجعل الزر يأخذ العرض الكامل للعمود الموجود فيه */
+        width: 100%;
+        
+        /* تقليل العرض الأقصى إذا أردت ألا يكون الزر ضخماً جداً على الشاشات الكبيرة */
+        max-width: 500px;
+        
+        /* التوسيط: لضمان بقاء الزر في منتصف العمود */
         display: block;
-        margin: 20px auto;     /* توسيط الزر في منتصف الصفحة */
+        margin: 0 auto;
+        
+        /* التنسيق الجمالي: زيادة الـ padding تجعل الزر "سميكاً" وعريضاً */
+        padding: 20px 0; 
+        
+        /* تنسيق الخط واللون */
+        font-size: 1.5rem;
+        font-weight: 900;
+        border-radius: 15px;
+        border: none;
         background: linear-gradient(90deg, #007bff, #ff2d2d);
         color: white;
-        font-weight: 900;
-        font-size: 1.2rem;     /* حجم خط مريح للعين */
-        padding: 18px 0;       /* زيادة المساحة الداخلية ليكون الزر "ضخماً" وفخماً */
-        border-radius: 12px;   /* زوايا ناعمة وعصرية */
-        border: none;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease;
-        text-align: center;    /* لضمان توسيط النص */
     }
 
     div.stButton > button:hover {
