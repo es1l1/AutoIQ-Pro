@@ -23,134 +23,67 @@ LOGO_URL = "https://raw.githubusercontent.com/es1l1/AutoIQ-Pro/main/logo.png"
 # =========================================================
 # 3. التنسيق الاحترافي (CSS) - طابع فخامة وسرعة
 # =========================================================
-st.markdown(f"""
-<style>
+st.markdown("""
+    <style>
     @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&display=swap');
 
-    html, body, [class*="css"] {{
+    html, body, [class*="css"] {
         font-family: 'Cairo', sans-serif;
         direction: rtl;
-    }}
+    }
 
-    .stApp {{
-        background: radial-gradient(circle at 20% 20%, #1a1a1a 0%, #0d0d0d 60%, #000000 100%);
-        color: #f2f2f2;
-    }}
+    .stApp {
+        background: radial-gradient(circle at 50% -20%, #1a2a3a 0%, #0a0a0a 70%, #000000 100%);
+        color: #e0e0e0;
+    }
 
-    .autoiq-header {{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 18px;
-        padding: 18px 10px 10px 10px;
-    }}
-
-    .autoiq-title {{
-        font-size: 2.6rem;
+    .autoiq-title {
+        font-size: 3rem;
         font-weight: 900;
-        background: linear-gradient(90deg, #ff2d2d, #ffb100, #ff2d2d);
-        background-size: 200% auto;
+        background: linear-gradient(90deg, #007bff, #ffffff, #ff2d2d);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: shine 4s linear infinite;
         text-align: center;
-        margin: 0;
-    }}
+        margin-bottom: 5px;
+    }
 
-    @keyframes shine {{
-        to {{ background-position: 200% center; }}
-    }}
+    .car-card {
+        background: rgba(255, 255, 255, 0.03);
+        border-right: 4px solid #007bff;
+        border-radius: 12px;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+    }
 
-    .autoiq-subtitle {{
-        text-align: center;
-        color: #b8b8b8;
-        font-size: 1.05rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-top: -8px;
-        margin-bottom: 10px;
-    }}
-
-    .autoiq-divider {{
-        height: 3px;
-        background: linear-gradient(90deg, transparent, #ff2d2d, #ffb100, #ff2d2d, transparent);
-        border: none;
-        margin: 10px 0 30px 0;
-        border-radius: 5px;
-    }}
-
-    .car-card {{
-        background: linear-gradient(145deg, #161616, #1f1f1f);
-        border: 1px solid #2c2c2c;
-        border-radius: 18px;
-        padding: 22px 20px;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-        transition: all 0.3s ease;
-    }}
-
-    .car-card:hover {{
-        border-color: #ff2d2d;
-        box-shadow: 0 8px 30px rgba(255,45,45,0.25);
-    }}
-
-    .car-card-title {{
-        font-size: 1.2rem;
-        font-weight: 800;
-        color: #0091ff;
-        margin-bottom: 14px;
-        text-align: center;
-    }}
-
-    div.stButton > button {{
+    div.stButton > button {
         width: 100%;
-        background: linear-gradient(90deg, #ff2d2d, #cc0000);
+        background: linear-gradient(90deg, #007bff, #0056b3);
         color: white;
         font-weight: 800;
-        font-size: 1.15rem;
-        padding: 14px 0;
         border: none;
-        border-radius: 14px;
-        box-shadow: 0 6px 18px rgba(255,45,45,0.35);
-        transition: all 0.25s ease;
-        letter-spacing: 1px;
-    }}
+        border-radius: 8px;
+        padding: 15px;
+        transition: 0.3s;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
 
-    div.stButton > button:hover {{
-        transform: translateY(-2px) scale(1.01);
-        box-shadow: 0 10px 26px rgba(255,45,45,0.5);
-        background: linear-gradient(90deg, #0091ff, #372dff);
-        color: #000;
-    }}
+    div.stButton > button:hover {
+        background: linear-gradient(90deg, #ff2d2d, #cc0000);
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(255, 45, 45, 0.4);
+    }
 
-    div[data-baseweb="select"] {{
-        border-radius: 10px !important;
-    }}
-
-    .report-box {{
-        background: linear-gradient(145deg, #141414, #1c1c1c);
-        border: 1px solid #ffb100;
-        border-radius: 18px;
-        padding: 28px;
-        margin-top: 25px;
-        box-shadow: 0 10px 30px rgba(255,177,0,0.15);
-        line-height: 1.9;
-    }}
-
-    .vs-badge {{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        font-weight: 900;
-        color: #ff2d2d;
-        text-shadow: 0 0 12px rgba(255,45,45,0.6);
-    }}
-
-    footer {{visibility: hidden;}}
-    #MainMenu {{visibility: hidden;}}
-</style>
+    .report-box {
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid #333;
+        border-left: 5px solid #ff2d2d;
+        border-radius: 10px;
+        padding: 25px;
+        line-height: 1.8;
+    }
+    </style>
 """, unsafe_allow_html=True)
-
 # =========================================================
 # 4. رأس الصفحة + الشعار
 # =========================================================
