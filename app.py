@@ -31,11 +31,13 @@ st.markdown("### مقارنة تقنية ذكية بين السيارات")
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_excel("cars_data.xlsx")
+        # قراءة ملف الـ CSV الذي رفعته (بفاصلة منقوطة)
+        df = pd.read_csv("cars_data.csv", sep=';')
+        # تنظيف أسماء الأعمدة من المسافات المخفية
         df.columns = df.columns.str.strip()
         return df
     except FileNotFoundError:
-        st.error("ملف cars_data.xlsx غير موجود داخل المشروع.")
+        st.error("ملف cars_data.csv غير موجود. تأكد من اسم الملف.")
         return None
     except Exception as e:
         st.error(f"خطأ أثناء قراءة الملف: {e}")
