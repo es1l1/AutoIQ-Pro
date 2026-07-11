@@ -230,7 +230,7 @@ if not df.empty and 'Make' in df.columns and 'Model' in df.columns:
     st.write("")
     center = st.columns([1, 2, 1])
     with center[1]:
-        analyze_clicked = st.button("⚡ ابدأ التحليل التقني")
+        analyze_clicked = st.button("⚡ ابدأ المقارنه")
 
     if analyze_clicked:
         with st.spinner("🔧 جاري تحليل الأداء والمقارنة التقنية..."):
