@@ -18,7 +18,7 @@ st.set_page_config(
 # ضع رابط الشعار الخام (raw) من GitHub هنا. مثال:
 # https://raw.githubusercontent.com/USERNAME/REPO/main/logo.png
 # =========================================================
-LOGO_URL = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/logo.png"
+LOGO_URL = "https://raw.githubusercontent.com/es1l1/AutoIQ-Pro/main/logo.png"
 
 # =========================================================
 # 3. التنسيق الاحترافي (CSS) - طابع فخامة وسرعة
