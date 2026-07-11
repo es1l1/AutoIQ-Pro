@@ -1,0 +1,1078 @@
+Make,Model,HP,Torque,CC,Fuel_Efficiency
+General Motors,GMC Yukon,355,519,5300,13.5
+General Motors,Cadillac Escalade,420,623,6200,14.0
+Stellantis,Jeep Wrangler,285,353,3600,10.8
+Stellantis,Jeep Grand Cherokee,295,352,3600,10.2
+Stellantis,Fiat 500,100,150,1200,5.5
+Stellantis,Dodge Charger,292,353,3600,9.5
+Stellantis,Ram 1500,395,556,5700,12.5
+Ford,Focus,160,240,2000,6.7
+Ford,Mustang,450,556,5000,11.0
+Ford,Explorer,300,420,2300,9.8
+Ford,F-150,400,500,3500,10.5
+BYD,Han,517,700,0,0
+BYD,Tang,500,680,0,0
+BYD,Seal,530,670,0,0
+BYD,Atto 3,201,310,0,0
+Honda,Civic,158,187,2000,6.0
+Honda,Accord,192,260,1500,6.8
+Honda,CR-V,190,243,1500,7.5
+Honda,Pilot,285,355,3500,9.5
+Nissan,Altima,188,244,2500,6.7
+Nissan,Sentra,149,198,2000,6.3
+Nissan,Patrol,400,560,5600,14.0
+Nissan,GT-R,565,633,3800,12.0
+Suzuki,Swift,103,138,1200,4.8
+Suzuki,Vitara,140,220,1400,5.9
+Suzuki,Jimny,100,130,1500,6.8
+Suzuki,Baleno,90,120,1200,5.2
+Kia,Cerato,147,179,2000,6.0
+Kia,Sportage,187,241,2500,7.4
+Kia,Sorento,277,421,2500,8.5
+Kia,Stinger,368,510,3300,10.0
+Mercedes-Benz,C200,201,320,1500,6.9
+Mercedes-Benz,E300,255,370,2000,7.6
+Mercedes-Benz,S500,429,520,3000,9.5
+Mercedes-Benz,G63,577,850,4000,13.5
+Geely,Coolray,177,255,1500,6.3
+Geely,Emgrand,120,180,1500,6.0
+Geely,Atlas,181,290,2000,7.5
+Geely,Tugella,238,350,2000,7.8
+Make,Model,HP,Torque,CC,Fuel_Efficiency
+Honda,Civic,158,187,2000,6.0
+Honda,Accord,192,260,1500,6.8
+Honda,CR-V,190,243,1500,7.5
+Mercedes-Benz,C200,201,320,1500,6.9
+Mercedes-Benz,E300,255,370,2000,7.6
+Mercedes-Benz,G63,577,850,4000,13.5
+Audi,A4,201,320,2000,6.8
+Audi,A6,261,370,2000,7.4
+Audi,Q7,335,500,3000,9.0
+Ford,Focus,160,240,2000,6.7
+Ford,Mustang,450,556,5000,11.0
+Ford,Explorer,300,420,2300,9.8
+Nissan,Altima,188,244,2500,6.7
+Nissan,Patrol,400,560,5600,14.0
+Nissan,GT-R,565,633,3800,12.0
+Kia,Cerato,147,179,2000,6.0
+Kia,Sportage,187,241,2500,7.4
+Kia,Stinger,368,510,3300,10.0
+Mazda,3,155,200,2000,6.2
+Mazda,CX-5,187,252,2500,7.3
+Mazda,MX-5,181,205,2000,6.9
+Subaru,Impreza,152,196,2000,6.5
+Subaru,Outback,182,239,2500,7.8
+Subaru,WRX,271,350,2400,8.2
+Lexus,IS300,241,350,2000,7.5
+Lexus,RX350,295,370,3500,9.0
+Lexus,LX600,409,650,3500,12.5
+Porsche,911,379,450,3000,9.8
+Porsche,Cayenne,335,450,3000,10.5
+Porsche,Taycan,402,650,0,0
+Ferrari,F8,710,770,3900,15.0
+Ferrari,296,819,740,3000,12.0
+Ferrari,SF90,986,800,4000,16.0
+Lamborghini,Huracan,602,560,5200,14.0
+Lamborghini,Aventador,730,690,6500,17.0
+Lamborghini,Urus,641,850,4000,12.0
+Tesla,Model 3,283,450,0,0
+Tesla,Model S,670,1000,0,0
+Tesla,Model X,1020,1050,0,0
+Volvo,XC90,295,420,2000,8.0
+Volvo,S60,250,350,2000,7.1
+Volvo,XC60,247,350,2000,7.5
+Jaguar,XF,246,365,2000,7.4
+Jaguar,F-Pace,296,400,2000,8.3
+Jaguar,F-Type,444,580,5000,11.5
+Land Rover,Range Rover,395,550,3000,10.5
+Land Rover,Defender,296,400,2000,9.8
+Land Rover,Discovery,355,500,3000,10.0
+Peugeot,208,100,205,1200,5.2
+Peugeot,3008,180,250,1600,6.4
+Peugeot,508,217,300,1600,6.8
+Renault,Clio,100,160,1000,5.0
+Renault,Megane,140,240,1300,6.2
+Renault,Koleos,170,270,2000,7.5
+Skoda,Octavia,150,250,1400,5.9
+Skoda,Superb,190,320,2000,6.7
+Skoda,Kodiaq,180,320,2000,7.6
+Seat,Leon,150,250,1400,5.8
+Seat,Ateca,190,320,2000,7.2
+Seat,Ibiza,110,200,1000,5.3
+Fiat,500,100,150,1200,5.5
+Fiat,Panda,95,140,1000,5.4
+Fiat,Tipo,120,200,1400,6.3
+Alfa Romeo,Giulia,280,400,2000,7.8
+Alfa Romeo,Stelvio,280,400,2000,8.5
+Alfa Romeo,4C,237,350,1800,7.9
+Mitsubishi,Lancer,148,197,2000,6.9
+Mitsubishi,Outlander,181,245,2400,7.8
+Mitsubishi,Pajero,280,430,3500,11.5
+Suzuki,Swift,103,138,1200,4.8
+Suzuki,Vitara,140,220,1400,5.9
+Suzuki,Jimny,100,130,1500,6.8
+Dodge,Charger,292,353,3600,9.5
+Dodge,Challenger,375,556,5700,12.0
+Dodge,Durango,360,529,5700,11.5
+Jeep,Wrangler,285,353,3600,10.8
+Jeep,Grand Cherokee,295,352,3600,10.2
+Jeep,Compass,177,229,2400,8.1
+GMC,Yukon,355,519,5300,13.5
+GMC,Acadia,310,367,3600,10.0
+GMC,Terrain,170,275,1500,7.9
+Cadillac,Escalade,420,623,6200,14.0
+Cadillac,CT5,237,350,2000,7.8
+Cadillac,XT5,310,367,3600,9.5
+Buick,Enclave,310,360,3600,9.8
+Buick,Encore,155,240,1400,7.2
+Mini,Cooper,134,220,1500,6.5
+Mini,Countryman,189,280,2000,7.5
+Aston Martin,DB11,528,675,4000,12.5
+Aston Martin,Vantage,503,685,4000,11.8
+Bentley,Continental GT,626,900,6000,14.5
+Bentley,Bentayga,542,770,4000,13.2
+Rolls-Royce,Ghost,563,850,6700,15.5
+Rolls-Royce,Cullinan,563,850,6700,16.0
+Bugatti,Chiron,1500,1600,8000,22.0
+Pagani,Huayra,730,1000,6000,18.0
+Koenigsegg,Jesko,1600,1500,5000,20.0
+Geely,Coolray,177,255,1500,6.3
+Chery,Tiggo 8,197,290,2000,7.6
+Haval,H6,201,320,2000,7.4
+BYD,Han,517,700,0,0
+Nio,ES6,544,725,0,0
+XPeng,P7,430,655,0,0
+Lucid,Air,1111,1400,0,0
+Rivian,R1T,835,1230,0,0
+Genesis,G70,252,353,2000,7.6
+Genesis,G80,300,422,2500,8.5
+Genesis,GV80,375,530,3500,10.5
+Infiniti,Q50,300,400,3000,9.0
+Infiniti,QX60,295,366,3500,10.2
+Infiniti,QX80,400,560,5600,14.5
+Acura,TLX,272,380,2000,8.2
+Acura,MDX,290,362,3500,9.8
+Acura,RDX,272,380,2000,8.5
+Opel,Astra,130,230,1400,5.9
+Opel,Insignia,200,350,2000,7.2
+Opel,Mokka,130,230,1200,5.8
+Vauxhall,Corsa,100,170,1200,5.3
+Vauxhall,Astra,145,250,1400,6.0
+Citroen,C3,110,205,1200,5.4
+Citroen,C5 Aircross,180,250,1600,6.8
+DS,DS3,130,230,1200,5.6
+DS,DS7,225,300,1600,7.2
+Cupra,Formentor,310,400,2000,8.0
+Cupra,Leon,300,400,2000,7.8
+Polestar,2,408,660,0,0
+Polestar,3,517,840,0,0
+Ram,1500,395,556,5700,12.5
+Ram,TRX,702,881,6200,18.0
+Isuzu,D-Max,190,450,3000,8.5
+Daihatsu,Terios,104,136,1500,6.9
+Lada,Niva,83,129,1700,8.0
+Proton,X70,177,255,1500,7.2
+Perodua,Myvi,102,137,1500,5.5
+Tata,Nexon,120,170,1200,5.8
+Mahindra,Scorpio,140,320,2200,7.5
+MG,ZS,143,353,0,0
+MG,HS,162,250,1500,7.1
+Wuling,Almaz,140,250,1500,7.0
+BAIC,BJ40,215,320,2300,9.5
+FAW,Bestune T77,169,258,1500,6.8
+Dongfeng,AX7,190,300,1600,7.4
+Foton,Tunland,163,390,2800,8.8
+JAC,S4,147,210,1500,6.5
+Roewe,RX5,173,275,1500,6.9
+Zotye,T600,162,215,1500,7.5
+Brilliance,V7,204,280,1600,7.8
+Changan,CS75,178,265,1800,7.2
+Great Wall,Pao,190,360,2000,8.5
+Hongqi,H9,283,400,3000,9.0
+Spyker,C8,400,480,4200,11.5
+Saleen,S7,750,950,7000,20.0
+SSC,Tuatara,1750,1735,5900,22.0
+TVR,Griffith,500,600,5000,12.0
+Morgan,Plus Six,335,500,3000,9.5
+Caterham,Seven,310,297,2000,7.0
+DeLorean,DMC-12,130,207,2800,9.0
+Smart,Fortwo,89,135,1000,4.5
+Smart,Forfour,90,135,1000,4.8
+Saab,9-3,210,300,2000,7.6
+Saab,9-5,260,350,2300,8.2
+Scion,tC,179,231,2500,7.4
+Scion,FR-S,200,205,2000,7.8
+General Motors,GMC Yukon,355,519,5300,13.5
+General Motors,Cadillac Escalade,420,623,6200,14.0
+Stellantis,Jeep Wrangler,285,353,3600,10.8
+Stellantis,Jeep Grand Cherokee,295,352,3600,10.2
+Stellantis,Fiat 500,100,150,1200,5.5
+Stellantis,Dodge Charger,292,353,3600,9.5
+Stellantis,Ram 1500,395,556,5700,12.5
+Ford,Focus,160,240,2000,6.7
+Ford,Mustang,450,556,5000,11.0
+Ford,Explorer,300,420,2300,9.8
+Ford,F-150,400,500,3500,10.5
+BYD,Han,517,700,0,0
+BYD,Tang,500,680,0,0
+BYD,Seal,530,670,0,0
+BYD,Atto 3,201,310,0,0
+Honda,Civic,158,187,2000,6.0
+Honda,Accord,192,260,1500,6.8
+Honda,CR-V,190,243,1500,7.5
+Honda,Pilot,285,355,3500,9.5
+Nissan,Altima,188,244,2500,6.7
+Nissan,Sentra,149,198,2000,6.3
+Nissan,Patrol,400,560,5600,14.0
+Nissan,GT-R,565,633,3800,12.0
+Suzuki,Swift,103,138,1200,4.8
+Suzuki,Vitara,140,220,1400,5.9
+Suzuki,Jimny,100,130,1500,6.8
+Suzuki,Baleno,90,120,1200,5.2
+Kia,Cerato,147,179,2000,6.0
+Kia,Sportage,187,241,2500,7.4
+Kia,Sorento,277,421,2500,8.5
+Kia,Stinger,368,510,3300,10.0
+Mercedes-Benz,C200,201,320,1500,6.9
+Mercedes-Benz,E300,255,370,2000,7.6
+Mercedes-Benz,S500,429,520,3000,9.5
+Mercedes-Benz,G63,577,850,4000,13.5
+Geely,Coolray,177,255,1500,6.3
+Geely,Emgrand,120,180,1500,6.0
+Geely,Atlas,181,290,2000,7.5
+Geely,Tugella,238,350,2000,7.8
+Toyota,Corolla,169,205,2000,6.5
+Toyota,Corolla Cross,169,205,2000,6.8
+Toyota,Camry,203,250,2500,7.1
+Toyota,Avalon,301,362,3500,8.5
+Toyota,Yaris,106,140,1500,5.5
+Toyota,Yaris Cross,116,120,1500,4.8
+Toyota,Prius,121,142,1800,3.8
+Toyota,Prius Prime,220,300,2000,3.5
+Toyota,Mirai,182,300,0,0
+Toyota,GR86,228,250,2400,7.8
+Toyota,Supra,382,500,3000,8.0
+Toyota,GR Corolla,300,370,1600,8.5
+Toyota,RAV4,203,250,2500,7.0
+Toyota,RAV4 Hybrid,219,221,2500,6.0
+Toyota,Venza,219,221,2500,6.5
+Toyota,C-HR,144,189,2000,6.7
+Toyota,Highlander,295,357,3500,9.5
+Toyota,Highlander Hybrid,243,350,2500,7.0
+Toyota,4Runner,270,376,4000,11.0
+Toyota,Land Cruiser,409,650,3500,12.0
+Toyota,Sequoia,437,790,3500,13.0
+Toyota,Hilux,201,500,2800,8.5
+Toyota,Tacoma,278,359,3500,10.0
+Toyota,Tacoma Hybrid,326,630,2400,8.8
+Toyota,Tundra,389,649,3500,11.5
+Toyota,Tundra Hybrid,437,790,3500,10.5
+Toyota,Fortuner,204,500,2800,9.0
+Toyota,Innova,172,360,2400,8.0
+Toyota,Innova Hycross,186,206,2000,6.5
+Toyota,Sienna,245,320,2500,7.0
+Toyota,Alphard,296,361,3500,10.0
+Toyota,Vellfire,296,361,3500,10.5
+Toyota,Proace,180,400,2000,8.5
+Toyota,HiAce,174,420,2800,9.5
+Toyota,Coaster,150,400,4000,14.0
+Toyota,bZ4X,201,265,0,0
+Toyota,bZ3,245,303,0,0
+Toyota,bZ Compact,215,300,0,0
+Volkswagen,Golf,147,250,1400,5.9
+Volkswagen,Golf GTI,241,370,2000,7.5
+Volkswagen,Golf R,315,420,2000,8.0
+Volkswagen,Polo,110,200,1000,5.5
+Volkswagen,Virtus,150,250,1400,6.2
+Volkswagen,Passat,174,280,2000,6.8
+Volkswagen,Arteon,268,350,2000,7.8
+Volkswagen,Jetta,158,250,1400,6.5
+Volkswagen,CC,200,280,2000,7.2
+Volkswagen,T-Cross,110,200,1000,5.8
+Volkswagen,Taigo,110,200,1000,5.7
+Volkswagen,T-Roc,150,250,1500,6.5
+Volkswagen,T-Roc R,300,400,2000,8.2
+Volkswagen,Tiguan,184,300,2000,7.5
+Volkswagen,Tiguan Allspace,220,350,2000,8.0
+Volkswagen,Touareg,335,450,3000,9.5
+Volkswagen,Atlas,235,350,2000,9.0
+Volkswagen,Atlas Cross Sport,269,370,3600,9.8
+Volkswagen,Amarok,258,580,3000,8.5
+Volkswagen,Caddy,122,320,2000,6.8
+Volkswagen,Transporter,150,340,2000,7.5
+Volkswagen,Caravelle,199,450,2000,8.5
+Volkswagen,Multivan,218,350,1500,7.2
+Volkswagen,ID.3,204,310,0,0
+Volkswagen,ID.4,204,310,0,0
+Volkswagen,ID.5,299,460,0,0
+Volkswagen,ID.6,306,460,0,0
+Volkswagen,ID.Buzz,204,310,0,0
+Volkswagen,ID.7,286,545,0,0
+Volkswagen,Beetle,174,250,2000,7.0
+Volkswagen,Scirocco,220,350,2000,7.5
+Volkswagen,Up!,75,95,1000,4.5
+Volkswagen,Sharan,220,350,2000,8.2
+Hyundai,Elantra,147,179,2000,5.8
+Hyundai,Elantra N,276,392,2000,8.5
+Hyundai,Sonata,191,245,2500,6.8
+Hyundai,Sonata N Line,290,422,2500,8.2
+Hyundai,Accent,120,152,1600,5.9
+Hyundai,Azera,290,355,3500,9.5
+Hyundai,Grandeur,300,360,3500,9.8
+Hyundai,i10,67,96,1000,4.8
+Hyundai,i20,100,172,1200,5.5
+Hyundai,i30,147,179,2000,6.3
+Hyundai,i30 N,276,392,2000,8.7
+Hyundai,Kona,195,265,2000,6.7
+Hyundai,Kona N,276,392,2000,8.5
+Hyundai,Kona Electric,201,395,0,0
+Hyundai,Tucson,187,241,2500,7.2
+Hyundai,Tucson Hybrid,226,350,1600,6.5
+Hyundai,Santa Fe,277,421,2500,8.5
+Hyundai,Santa Fe Hybrid,226,350,1600,7.0
+Hyundai,Palisade,291,355,3800,10.5
+Hyundai,Venue,121,151,1600,6.0
+Hyundai,Casper,99,172,1000,5.3
+Hyundai,Creta,115,144,1500,6.4
+Hyundai,Bayon,100,172,1000,5.4
+Hyundai,Staria,177,430,2200,8.8
+Hyundai,H-1,170,392,2400,9.0
+Hyundai,Porter,130,255,2500,8.5
+Hyundai,Mighty,150,373,3900,11.5
+Hyundai,IONIQ Hybrid,139,265,1600,4.5
+Hyundai,IONIQ 5,225,350,0,0
+Hyundai,IONIQ 6,225,350,0,0
+Hyundai,Nexo,161,395,0,0
+Hyundai,Veloster,201,264,1600,7.2
+Hyundai,Veloster N,275,353,2000,8.8
+Hyundai,Genesis Coupe,348,400,3800,10.5
+BMW,116i,109,180,1500,5.8
+BMW,118i,134,220,1500,6.0
+BMW,120i,178,280,2000,6.5
+BMW,128ti,261,400,2000,7.5
+BMW,M135i,302,450,2000,8.2
+BMW,218i,140,220,1500,5.9
+BMW,220i,184,300,2000,6.5
+BMW,230i,255,400,2000,7.2
+BMW,M240i,382,500,3000,8.5
+BMW,320i,180,300,2000,7.2
+BMW,330i,255,400,2000,7.5
+BMW,340i,382,500,3000,8.5
+BMW,M3,473,550,3000,10.2
+BMW,420i,184,300,2000,6.8
+BMW,430i,255,400,2000,7.5
+BMW,M440i,382,500,3000,8.8
+BMW,520i,184,300,2000,6.9
+BMW,530i,248,350,2000,7.4
+BMW,540i,335,450,3000,8.5
+BMW,M5,617,750,4400,11.5
+BMW,730i,265,400,2000,7.8
+BMW,740i,375,520,3000,9.0
+BMW,M760i,601,800,6600,13.0
+BMW,X1,241,400,2000,7.5
+BMW,X2,228,350,2000,7.8
+BMW,X3,248,350,2000,8.5
+BMW,X3 M,473,600,3000,10.5
+BMW,X4,248,350,2000,8.7
+BMW,X4 M,473,600,3000,10.8
+BMW,X5,335,450,3000,9.5
+BMW,X5 M,617,750,4400,12.5
+BMW,X6,335,450,3000,9.8
+BMW,X6 M,617,750,4400,13.0
+BMW,X7,375,520,3000,10.5
+BMW,XM,644,800,4400,13.5
+BMW,Z4,255,400,2000,7.5
+BMW,i3,170,250,0,0
+BMW,i4,335,430,0,0
+BMW,i5,335,430,0,0
+BMW,i7,536,745,0,0
+BMW,iX1,313,494,0,0
+BMW,iX3,282,400,0,0
+BMW,iX,516,765,0,0
+BMW,i8,369,570,1500,2.1
+Mercedes-Benz,A180,136,200,1300,5.8
+Mercedes-Benz,A200,163,250,1300,6.2
+Mercedes-Benz,A250,221,350,2000,7.0
+Mercedes-Benz,AMG A35,302,400,2000,8.2
+Mercedes-Benz,AMG A45,382,480,2000,8.8
+Mercedes-Benz,C180,156,250,1500,6.5
+Mercedes-Benz,C200,201,320,1500,6.9
+Mercedes-Benz,C300,255,370,2000,7.6
+Mercedes-Benz,AMG C43,402,500,3000,9.0
+Mercedes-Benz,AMG C63,503,700,4000,11.5
+Mercedes-Benz,E200,197,320,2000,7.2
+Mercedes-Benz,E300,255,370,2000,7.6
+Mercedes-Benz,E450,362,500,3000,8.5
+Mercedes-Benz,AMG E53,429,520,3000,9.5
+Mercedes-Benz,AMG E63,603,850,4000,12.5
+Mercedes-Benz,S350,286,600,3000,8.5
+Mercedes-Benz,S500,429,520,3000,9.5
+Mercedes-Benz,S580,496,700,4000,10.5
+Mercedes-Benz,AMG S63,603,900,4000,13.5
+Mercedes-Benz,CLA200,163,250,1300,6.3
+Mercedes-Benz,CLA250,221,350,2000,7.2
+Mercedes-Benz,AMG CLA45,382,480,2000,8.7
+Mercedes-Benz,CLS450,362,500,3000,8.8
+Mercedes-Benz,GLE350,255,370,2000,8.5
+Mercedes-Benz,GLE450,362,500,3000,9.5
+Mercedes-Benz,AMG GLE53,429,520,3000,10.0
+Mercedes-Benz,AMG GLE63,603,850,4000,12.8
+Mercedes-Benz,GLC300,255,370,2000,7.8
+Mercedes-Benz,AMG GLC43,385,520,3000,9.0
+Mercedes-Benz,AMG GLC63,469,650,4000,11.5
+Mercedes-Benz,GLB250,221,350,2000,7.5
+Mercedes-Benz,GLA200,163,250,1300,6.5
+Mercedes-Benz,G400,416,610,3000,11.5
+Mercedes-Benz,AMG G63,577,850,4000,13.5
+Mercedes-Benz,EQS450,329,565,0,0
+Mercedes-Benz,EQS580,516,855,0,0
+Mercedes-Benz,EQE350,288,565,0,0
+Mercedes-Benz,EQA250,188,385,0,0
+Mercedes-Benz,EQB300,225,390,0,0
+Mercedes-Benz,EQC400,402,760,0,0
+Mercedes-Benz,SL43,375,480,2000,9.5
+Mercedes-Benz,SL55 AMG,469,700,4000,11.0
+Mercedes-Benz,SL63 AMG,577,800,4000,12.0
+Mercedes-Benz,AMG GT,469,630,4000,11.5
+Mercedes-Benz,AMG GT Black Series,720,800,4000,14.0
+Mercedes-Benz,Vito,190,440,2000,8.5
+Mercedes-Benz,V-Class,237,500,2000,9.0
+Mercedes-Benz,Sprinter,190,440,2000,9.5
+BYD,F0,67,90,1000,5.2
+BYD,F3,107,145,1500,6.3
+BYD,F6,140,186,2000,7.5
+BYD,Seagull,74,135,0,0
+BYD,Dolphin,95,180,0,0
+BYD,Dolphin Plus,201,310,0,0
+BYD,Atto 3,201,310,0,0
+BYD,Yuan Plus,201,310,0,0
+BYD,Yuan Pro,136,210,0,0
+BYD,Tang,517,680,0,0
+BYD,Tang DM-i,272,400,1500,5.5
+BYD,Tang DM-p,489,675,1500,6.5
+BYD,Han,517,700,0,0
+BYD,Han DM-i,272,400,1500,5.2
+BYD,Han DM-p,580,822,1500,6.8
+BYD,Seal,530,670,0,0
+BYD,Seal DM-i,197,325,1500,5.0
+BYD,Seal U,218,330,0,0
+BYD,Song Plus,197,325,1500,5.8
+BYD,Song Pro,185,288,1500,5.6
+BYD,Song Max,160,245,1500,6.2
+BYD,Qin Plus,136,180,1500,4.8
+BYD,Qin Plus DM-i,197,325,1500,4.5
+BYD,Yangwang U8,1180,1280,2000,10.0
+BYD,Yangwang U9,1100,1200,0,0
+BYD,Denza D9,374,470,1500,6.5
+BYD,e2,95,180,0,0
+BYD,e6,95,180,0,0
+BYD,T3,134,180,0,0
+BYD,K9 Bus,241,2500,0,0
+Nissan,Micra,99,140,1000,5.2
+Nissan,Sunny,118,154,1500,5.8
+Nissan,Sentra,149,198,2000,6.3
+Nissan,Altima,188,244,2500,6.7
+Nissan,Maxima,300,354,3500,8.5
+Nissan,Teana,245,350,2500,7.5
+Nissan,Versa,122,154,1500,5.9
+Nissan,Juke,114,180,1000,5.8
+Nissan,Kicks,122,154,1600,6.2
+Nissan,Qashqai,158,260,1600,6.5
+Nissan,X-Trail,181,245,2000,7.5
+Nissan,Rogue,201,330,2500,7.8
+Nissan,Pathfinder,295,366,3500,9.8
+Nissan,Murano,260,325,3500,9.5
+Nissan,Patrol,400,560,5600,14.0
+Nissan,Armada,400,560,5600,14.2
+Nissan,GT-R,565,633,3800,12.0
+Nissan,Z,400,475,3000,9.0
+Nissan,370Z,332,366,3700,10.5
+Nissan,Navara,190,450,2500,8.5
+Nissan,Titan,400,560,5600,12.5
+Nissan,Almera,100,150,1200,5.5
+Nissan,Tiida,118,154,1600,5.8
+Nissan,Leaf,214,340,0,0
+Nissan,Ariya,389,600,0,0
+Nissan,E-NV200,109,254,0,0
+Nissan,Serena,150,250,2000,6.8
+Nissan,Elgrand,280,350,3500,9.0
+Nissan,Urvan,144,300,2500,8.5
+Nissan,Cabstar,150,320,3000,10.5
+Kia,Picanto,67,96,1000,4.8
+Kia,Rio,100,172,1200,5.2
+Kia,Cerato,147,179,2000,6.0
+Kia,K5,180,265,1600,6.5
+Kia,Stinger,368,510,3300,10.0
+Kia,Optima,185,245,2000,6.8
+Kia,Soluto,95,132,1400,5.5
+Kia,Seltos,147,179,2000,6.4
+Kia,Sportage,187,241,2500,7.4
+Kia,Sorento,277,421,2500,8.5
+Kia,Telluride,291,355,3800,10.8
+Kia,Mohave,260,560,3000,11.5
+Kia,Carens,115,144,1500,6.3
+Kia,Carnival,290,355,3500,9.5
+Kia,EV6,325,605,0,0
+Kia,EV6 GT,576,740,0,0
+Kia,EV9,379,700,0,0
+Kia,Niro,139,265,1600,4.5
+Kia,Niro EV,201,395,0,0
+Kia,EV3,204,283,0,0
+Kia,EV5,215,310,0,0
+Kia,Sonet,115,144,1500,6.0
+Kia,Stonic,100,172,1200,5.8
+Kia,Bongo,133,255,2500,8.8
+Kia,K2500,130,255,2500,9.0
+Kia,K2700,130,255,2500,9.5
+Kia,Granbird,380,1500,8000,18.0
+Ford,Fiesta,120,150,1000,5.5
+Ford,Focus,160,240,2000,6.7
+Ford,Mondeo,187,250,2000,7.2
+Ford,Fusion,175,250,2000,7.0
+Ford,Mustang EcoBoost,310,475,2300,8.5
+Ford,Mustang GT,450,556,5000,11.0
+Ford,Mustang Dark Horse,500,567,5000,11.5
+Ford,Explorer,300,420,2300,9.8
+Ford,Explorer ST,400,563,3000,10.5
+Ford,Edge,250,380,2000,8.5
+Ford,Escape,180,275,1500,7.5
+Ford,Kuga,180,275,1500,7.4
+Ford,Expedition,380,637,3500,12.5
+Ford,Everest,300,500,3000,10.8
+Ford,Bronco,330,563,2700,11.0
+Ford,Bronco Sport,250,380,2000,9.0
+Ford,F-150,400,500,3500,10.5
+Ford,F-150 Raptor,450,691,3500,12.0
+Ford,F-150 Raptor R,720,868,5000,14.5
+Ford,Ranger,270,470,3000,9.5
+Ford,Ranger Raptor,392,583,3000,10.8
+Ford,Super Duty F-250,475,1200,6200,15.5
+Ford,Super Duty F-350,500,1250,6700,16.0
+Ford,Transit,190,430,2000,9.0
+Ford,Transit Custom,170,405,2000,8.5
+Ford,Edge ST,335,515,2700,9.5
+Ford,Mustang Mach-E,480,860,0,0
+Ford,F-150 Lightning,580,1050,0,0
+Ford,E-Transit,266,430,0,0
+Ford,Escape Hybrid,200,300,2500,5.5
+Ford,Explorer Hybrid,318,437,3000,7.0
+Ford,Maverick,191,258,2500,6.5
+Jeep,Renegade,180,270,1600,7.0
+Jeep,Compass,177,229,2400,8.1
+Jeep,Cherokee,271,400,3600,9.5
+Jeep,Grand Cherokee,295,352,3600,10.2
+Jeep,Grand Cherokee L,357,530,3600,10.8
+Jeep,Wrangler,285,353,3600,10.8
+Jeep,Wrangler Rubicon,470,637,3600,11.5
+Jeep,Gladiator,285,353,3600,10.5
+Jeep,Gladiator Mojave,470,637,3600,11.8
+Jeep,Patriot,172,220,2400,8.5
+Jeep,Liberty,210,350,3600,9.2
+Jeep,Commander,268,400,3600,10.0
+Jeep,Wagoneer,420,635,5700,13.5
+Jeep,Grand Wagoneer,510,850,6200,14.5
+Jeep,Avenger,156,260,0,0
+Jeep,Recon,375,600,0,0
+Jeep,Wrangler 4xe,375,637,2000,6.5
+Jeep,Grand Cherokee 4xe,375,637,2000,6.8
+Dodge,Charger,292,353,3600,9.5
+Dodge,Charger R/T,370,536,5700,11.0
+Dodge,Charger Scat Pack,485,644,6200,12.5
+Dodge,Charger Hellcat,717,881,6200,14.0
+Dodge,Challenger,303,363,3600,9.8
+Dodge,Challenger R/T,375,556,5700,11.5
+Dodge,Challenger Scat Pack,485,644,6200,12.8
+Dodge,Challenger Hellcat,717,881,6200,14.5
+Dodge,Challenger Demon,808,972,6200,15.5
+Dodge,Durango,295,353,3600,10.2
+Dodge,Durango R/T,360,529,5700,11.5
+Dodge,Durango SRT,475,637,6200,12.8
+Dodge,Durango Hellcat,710,875,6200,13.8
+Dodge,Hornet,268,400,2000,7.5
+Dodge,Hornet R/T,288,519,1600,6.5
+Dodge,Journey,173,225,2400,8.5
+Dodge,Grand Caravan,283,355,3600,9.0
+Dodge,Dart,160,250,2000,7.0
+Dodge,Viper,645,814,8300,16.0
+Dodge,Magnum,340,500,5700,10.5
+Dodge,Neon,150,220,2000,7.2
+Suzuki,Alto,67,90,1000,4.5
+Suzuki,Celerio,68,90,1000,4.8
+Suzuki,Swift,103,138,1200,4.8
+Suzuki,Swift Sport,140,230,1400,6.5
+Suzuki,Baleno,90,120,1200,5.2
+Suzuki,Dzire,90,113,1200,5.4
+Suzuki,Splash,94,118,1200,5.6
+Suzuki,Ignis,83,107,1200,5.3
+Suzuki,Vitara,140,220,1400,5.9
+Suzuki,Grand Vitara,115,144,1500,6.4
+Suzuki,S-Cross,140,220,1400,6.0
+Suzuki,Jimny,100,130,1500,6.8
+Suzuki,Jimny 5-Door,102,134,1500,7.0
+Suzuki,SX4,150,200,2000,6.8
+Suzuki,XL7,103,138,1500,6.2
+Suzuki,Ertiga,103,138,1500,6.3
+Suzuki,APV,92,126,1500,7.5
+Suzuki,Carry,80,120,1500,7.8
+Suzuki,Ciaz,105,138,1500,5.8
+Suzuki,Across,302,350,2500,6.0
+Suzuki,Swift Hybrid,115,138,1200,4.2
+Suzuki,Vitara Hybrid,129,235,1400,4.8
+Suzuki,Solio,91,118,1200,4.9
+Suzuki,Every,64,95,660,5.5
+Changan,Alsvin,105,145,1400,5.5
+Changan,Eado,156,260,1500,6.2
+Changan,Eado Plus,178,300,1500,6.5
+Changan,CS35 Plus,156,260,1500,6.3
+Changan,CS55 Plus,180,300,1500,6.7
+Changan,CS75,178,265,1800,7.2
+Changan,CS75 Plus,233,390,2000,7.8
+Changan,CS85 Coupe,233,360,2000,8.0
+Changan,CS95,233,390,2000,8.5
+Changan,UNI-T,185,300,1500,6.8
+Changan,UNI-K,233,390,2000,7.5
+Changan,UNI-V,188,300,1500,6.4
+Changan,UNI-S,180,300,1500,6.6
+Changan,Kaicene F70,210,500,2300,8.8
+Changan,Lumin EV,48,87,0,0
+Changan,Deepal SL03,258,320,0,0
+Changan,Deepal S7,258,320,0,0
+Hongqi,H5,197,320,2000,7.2
+Hongqi,H6,252,380,2000,7.6
+Hongqi,H7,201,320,2000,7.5
+Hongqi,H9,283,400,3000,9.0
+Hongqi,H9 L,380,500,3000,9.8
+Hongqi,E-HS3,190,340,0,0
+Hongqi,E-HS5,335,450,0,0
+Hongqi,E-HS9,544,750,0,0
+Hongqi,HS5,224,340,2000,8.2
+Hongqi,HS7,337,445,3000,9.5
+Hongqi,LS7,360,500,4000,10.5
+Hongqi,LS9,400,550,4000,11.0
+Hongqi,S9,1400,1500,4000,12.5
+Hongqi,Q8,300,420,3000,9.0
+Audi,A1,116,200,1000,5.5
+Audi,A3,150,250,1400,6.0
+Audi,A3 Sportback,190,320,2000,6.5
+Audi,A4,201,320,2000,6.8
+Audi,A4 Avant,201,320,2000,6.9
+Audi,A5,261,370,2000,7.4
+Audi,A6,261,370,2000,7.6
+Audi,A6 Avant,335,500,3000,8.5
+Audi,A7,335,500,3000,8.7
+Audi,A8,460,660,4000,10.0
+Audi,Q2,150,250,1400,6.2
+Audi,Q3,190,320,2000,6.8
+Audi,Q4 e-tron,286,460,0,0
+Audi,Q5,261,370,2000,7.5
+Audi,Q7,335,500,3000,9.0
+Audi,Q8,340,500,3000,9.2
+Audi,TT,245,370,2000,7.2
+Audi,TT RS,400,480,2500,9.5
+Audi,R8,562,550,5200,13.0
+Audi,e-tron GT,476,630,0,0
+Audi,RS3,394,500,2500,8.8
+Audi,RS4 Avant,450,600,2900,9.5
+Audi,RS5,450,600,2900,9.6
+Audi,RS6 Avant,600,800,4000,11.5
+Audi,RS7,600,800,4000,11.8
+Audi,RS Q8,600,800,4000,12.0
+Audi,S3,310,400,2000,7.8
+Audi,S4,349,500,3000,8.5
+Audi,S5,349,500,3000,8.6
+Audi,S6,444,600,3000,9.0
+Audi,S7,444,600,3000,9.2
+Audi,S8,563,800,4000,10.5
+Audi,Q8 e-tron,408,664,0,0
+Audi,Q6 e-tron,382,590,0,0
+Ferrari,Portofino,591,760,3900,11.5
+Ferrari,Roma,612,760,3900,11.8
+Ferrari,296 GTB,819,740,3000,10.5
+Ferrari,F8 Tributo,710,770,3900,12.5
+Ferrari,812 Superfast,789,718,6500,15.0
+Ferrari,SF90 Stradale,986,800,4000,12.0
+Ferrari,LaFerrari,949,900,6300,14.5
+Ferrari,Monza SP1,809,719,6500,13.5
+Ferrari,Monza SP2,809,719,6500,13.5
+Ferrari,California T,553,755,3900,11.2
+Ferrari,488 GTB,661,760,3900,12.0
+Ferrari,488 Pista,710,770,3900,12.8
+Lamborghini,Huracan,602,560,5200,14.0
+Lamborghini,Huracan EVO,631,600,5200,14.5
+Lamborghini,Huracan STO,640,565,5200,15.0
+Lamborghini,Aventador,730,690,6500,17.0
+Lamborghini,Aventador SVJ,759,720,6500,17.5
+Lamborghini,Urus,641,850,4000,12.0
+Lamborghini,Urus Performante,657,850,4000,12.5
+Lamborghini,Revuelto,1001,807,6500,13.5
+Lamborghini,Sián,819,720,6500,12.8
+Lamborghini,Gallardo,562,540,5200,14.2
+Lamborghini,Veneno,740,690,6500,18.0
+Koenigsegg,CCX,806,920,4700,18.0
+Koenigsegg,Agera R,1140,1200,5000,20.0
+Koenigsegg,Agera RS,1160,1280,5000,21.0
+Koenigsegg,Regera,1500,2000,5000,0
+Koenigsegg,Jesko,1280,1500,5000,20.0
+Koenigsegg,Jesko Absolut,1600,1500,5000,21.0
+Koenigsegg,One:1,1341,1370,5000,22.0
+Koenigsegg,Gemera,1700,3500,2000,0
+Koenigsegg,CC850,1385,1385,5000,19.0
+Koenigsegg,CC8S,655,750,4700,17.5
+Mitsubishi,Mirage,78,100,1200,4.8
+Mitsubishi,Attrage,78,100,1200,5.0
+Mitsubishi,Lancer,148,197,2000,6.9
+Mitsubishi,Lancer Evolution X,291,366,2000,9.0
+Mitsubishi,ASX,150,197,2000,6.8
+Mitsubishi,Eclipse Cross,152,250,1500,7.2
+Mitsubishi,Outlander,181,245,2400,7.8
+Mitsubishi,Outlander PHEV,248,450,2400,2.5
+Mitsubishi,Outlander Sport,148,197,2000,7.0
+Mitsubishi,Montero Sport,215,400,2400,9.5
+Mitsubishi,Pajero,280,430,3500,11.5
+Mitsubishi,Pajero Sport,215,400,2400,10.0
+Mitsubishi,Strada,180,430,2400,8.5
+Mitsubishi,Triton,201,470,2400,8.8
+Mitsubishi,Delica D5,170,350,2400,9.0
+Mitsubishi,Space Star,71,100,1000,4.6
+Mitsubishi,i-MiEV,67,180,0,0
+Mitsubishi,XPander,105,141,1500,6.5
+Mitsubishi,XPander Cross,105,141,1500,6.7
+Chrysler,300,292,353,3600,9.5
+Chrysler,300C,363,536,5700,11.5
+Chrysler,Pacifica,287,355,3600,8.5
+Chrysler,Pacifica Hybrid,260,312,3600,3.5
+Chrysler,Voyager,287,355,3600,8.7
+Chrysler,200,184,234,2400,7.8
+Chrysler,Concorde,214,300,3500,9.0
+Chrysler,Sebring,173,220,2400,8.2
+Chrysler,Town & Country,283,344,3600,9.2
+Chrysler,LHS,214,300,3500,9.0
+Chrysler,PT Cruiser,150,220,2400,8.5
+Chrysler,Crossfire,215,310,3200,9.8
+Chrysler,Imperial,340,480,5700,12.0
+Chrysler,Airflow EV,201,350,0,0
+Lincoln,Navigator,440,691,3500,12.5
+Lincoln,Nautilus,250,380,2000,8.5
+Lincoln,Corsair,250,380,2000,7.8
+Lincoln,Aviator,400,563,3000,9.5
+Lincoln,Continental,400,542,3000,9.0
+Lincoln,MKZ,245,366,2000,8.2
+Lincoln,MKX,303,380,3500,9.8
+Lincoln,MKC,245,366,2000,8.5
+Lincoln,Black Label Navigator,450,700,3500,13.0
+Lincoln,Zephyr,272,380,2000,7.9
+Lexus,IS300,241,350,2000,7.5
+Lexus,IS350,311,380,3500,8.0
+Lexus,ES250,204,243,2500,6.8
+Lexus,ES350,302,362,3500,7.5
+Lexus,LS500,416,600,3500,9.5
+Lexus,LS500h,354,350,3500,6.8
+Lexus,UX200,169,205,2000,5.8
+Lexus,UX250h,181,188,2000,5.0
+Lexus,NX250,203,250,2500,7.0
+Lexus,NX350,275,430,2500,7.5
+Lexus,NX450h+,302,400,2500,3.0
+Lexus,RX350,295,370,3500,9.0
+Lexus,RX500h,366,550,2400,7.2
+Lexus,LX600,409,650,3500,12.5
+Lexus,GX460,301,446,4600,13.0
+Lexus,LC500,471,540,5000,11.5
+Lexus,RC300,260,320,2000,8.2
+Lexus,RCF,472,536,5000,12.0
+Lexus,ISF,416,503,5000,11.8
+Lexus,TX350,275,430,2500,8.5
+Lexus,TX500h,366,550,2400,7.8
+Lexus,UX300e,201,300,0,0
+Lexus,RZ450e,313,435,0,0
+Geely,Emgrand,114,147,1500,6.2
+Geely,Emgrand GL,133,215,1500,6.5
+Geely,Preface,181,290,2000,7.0
+Geely,Atlas,181,290,2000,7.5
+Geely,Okavango,190,300,2000,8.0
+Geely,Starray,218,325,2000,7.8
+Geely,Monjaro,235,380,2000,8.2
+Geely,Geometry C,201,310,0,0
+Geely,Geometry A,201,310,0,0
+GMC,Sierra 1500,420,624,5300,11.5
+GMC,Sierra HD,445,1234,6600,15.5
+GMC,Canyon,310,430,3600,9.5
+GMC,Acadia,310,366,3600,9.0
+GMC,Terrain,175,275,1500,7.8
+GMC,Yukon,355,519,5300,13.0
+GMC,Yukon XL,355,519,5300,13.5
+GMC,Hummer EV Pickup,1000,15590,0,0
+GMC,Hummer EV SUV,830,1100,0,0
+GWM,Haval H6,201,320,2000,7.2
+GWM,Haval H9,224,385,2000,9.0
+GWM,Haval Jolion,147,220,1500,6.5
+GWM,WEY VV7,227,387,2000,8.5
+GWM,WEY Coffee 01,300,450,2000,7.8
+GWM,ORA Good Cat,169,210,0,0
+GWM,ORA Funky Cat,171,250,0,0
+GWM,Poer,190,360,2000,8.8
+GWM,Poer King Kong,218,380,2000,9.2
+GWM,Tank 300,227,387,2000,9.5
+GWM,Tank 500,349,500,3000,10.8
+GAC,GS3,163,270,1500,6.5
+GAC,GS4,177,270,1500,7.0
+GAC,GS5,190,320,2000,7.8
+GAC,GS8,252,400,2000,9.5
+GAC,GN6,190,320,2000,8.5
+GAC,GN8,252,400,2000,9.0
+GAC,Aion S,201,350,0,0
+GAC,Aion Y,184,225,0,0
+GAC,Aion V,204,350,0,0
+GAC,Aion LX,490,700,0,0
+JAC,J4,113,146,1500,6.2
+JAC,J5,113,146,1500,6.5
+JAC,J6,150,210,1500,7.0
+JAC,J7,174,290,1500,7.5
+JAC,S2,115,150,1500,6.3
+JAC,S3,118,150,1500,6.5
+JAC,S4,147,210,1500,6.8
+JAC,S5,174,265,2000,7.5
+JAC,S7,190,300,2000,8.0
+JAC,Sehol E10X,82,170,0,0
+JAC,Sehol E40X,201,340,0,0
+JAC,T6 Pickup,177,320,2000,8.8
+JAC,T8,190,360,2000,9.0
+Jaguar,XE,247,365,2000,7.5
+Jaguar,XF,296,400,2000,8.0
+Jaguar,XJ,340,450,3000,9.0
+Jaguar,F-Type,444,580,5000,11.5
+Jaguar,E-Pace,246,365,2000,8.0
+Jaguar,F-Pace,296,400,2000,8.5
+Jaguar,I-Pace,394,696,0,0
+Jaguar,SVR F-Pace,550,700,5000,12.5
+Jaguar,SVR F-Type,575,700,5000,13.0
+Jaguar,XK,380,450,5000,10.8
+Volvo,XC40,197,300,2000,6.8
+Volvo,XC40 Recharge,408,660,0,0
+Volvo,XC60,250,350,2000,7.5
+Volvo,XC60 Recharge,455,709,2000,2.5
+Volvo,XC90,316,400,2000,8.5
+Volvo,XC90 Recharge,455,709,2000,3.0
+Volvo,S60,250,350,2000,7.0
+Volvo,S90,316,400,2000,7.8
+Volvo,V60,250,350,2000,7.2
+Volvo,V90,316,400,2000,7.8
+Volvo,C40 Recharge,408,660,0,0
+Volvo,EX30,428,543,0,0
+Volvo,EX40,442,670,0,0
+Volvo,EX90,517,910,0,0
+Volvo,ES90,496,800,0,0
+Volvo,V60 Polestar,415,670,2000,8.5
+Zeekr,001,544,768,0,0
+Zeekr,001 Performance,544,768,0,0
+Zeekr,001 FR,1265,1280,0,0
+Zeekr,009,536,686,0,0
+Zeekr,009 Grand,580,810,0,0
+Zeekr,X,428,543,0,0
+Zeekr,7X,422,440,0,0
+Zeekr,7,422,440,0,0
+Zeekr,Mix,422,440,0,0
+Zeekr,CS1e,268,343,0,0
+Zeekr,CS2e,315,420,0,0
+Aston Martin,Vantage,503,685,4000,11.5
+Aston Martin,DB11,528,675,5200,11.8
+Aston Martin,DBS Superleggera,715,900,5200,12.5
+Aston Martin,DB12,671,800,4000,11.0
+Aston Martin,DBX,542,700,4000,10.5
+Aston Martin,DBX707,697,900,4000,12.0
+Aston Martin,Valkyrie,1160,900,6500,0
+Aston Martin,Valhalla,937,1000,4000,0
+Aston Martin,Valour,705,753,5200,12.8
+Aston Martin,One-77,750,750,7000,15.0
+Aston Martin,Victor,836,821,7300,15.5
+Alfa Romeo,Giulia,280,400,2000,7.5
+Alfa Romeo,Giulia Quadrifoglio,505,600,2900,10.5
+Alfa Romeo,Stelvio,280,400,2000,8.5
+Alfa Romeo,Stelvio Quadrifoglio,505,600,2900,11.0
+Alfa Romeo,Tonale,268,400,1600,6.8
+Alfa Romeo,Junior,156,260,1200,5.8
+Alfa Romeo,4C,237,350,1800,7.0
+Alfa Romeo,8C Competizione,444,480,4700,12.5
+Alfa Romeo,GTV Concept,0,0,0,0
+Alfa Romeo,33 Stradale,620,730,3000,0
+Rolls-Royce,Phantom,563,900,6750,14.5
+Rolls-Royce,Phantom Extended,563,900,6750,15.0
+Rolls-Royce,Ghost,563,850,6750,14.0
+Rolls-Royce,Ghost Black Badge,592,900,6750,14.5
+Rolls-Royce,Wraith,624,800,6600,15.5
+Rolls-Royce,Dawn,563,780,6600,15.0
+Rolls-Royce,Cullinan,563,850,6750,15.5
+Rolls-Royce,Spectre,577,900,0,0
+Rolls-Royce,Boat Tail,600,900,6700,0
+Rolls-Royce,Arcadia Droptail,600,900,6700,0
+Rolls-Royce,La Rose Noire Droptail,600,900,6700,0
+Bentley,Continental GT,542,770,6000,12.5
+Bentley,Continental GT Speed,650,900,6000,13.5
+Bentley,Continental GTC,542,770,6000,12.8
+Bentley,Bentayga,542,770,4000,12.0
+Bentley,Bentayga Speed,626,900,6000,13.8
+Bentley,Bentayga Hybrid,456,700,3000,4.0
+Bentley,Flying Spur,542,770,6000,12.5
+Bentley,Flying Spur Speed,626,900,6000,13.2
+Bentley,Mulsanne,505,1020,6750,16.0
+Bentley,EXP 100 GT,0,0,0,0
+Bentley,Bacalar,650,900,6000,0
+Bentley,Azure,540,770,6000,13.0
+Citroën,C1,72,93,1000,4.8
+Citroën,C3,110,205,1200,5.4
+Citroën,C3 Aircross,130,230,1200,6.0
+Citroën,C4,155,240,1200,6.2
+Citroën,C4 X,155,240,1200,6.3
+Citroën,C5 Aircross,180,250,1600,6.8
+Citroën,C5 X,225,360,1600,7.0
+Citroën,Berlingo,130,230,1500,6.5
+Citroën,Jumpy,177,400,2000,7.5
+Citroën,Jumper,165,370,2200,8.5
+Citroën,Ami,8,40,0,0
+Citroën,e-C4,136,260,0,0
+Citroën,e-C3,113,120,0,0
+Citroën,Basalt,130,230,1200,6.3
+Peugeot,108,72,93,1000,4.7
+Peugeot,208,136,230,1200,5.0
+Peugeot,2008,155,240,1200,5.8
+Peugeot,308,180,250,1500,6.3
+Peugeot,3008,180,250,1500,6.8
+Peugeot,5008,180,250,1500,7.2
+Peugeot,408,225,360,1600,7.0
+Peugeot,508,225,360,1600,7.3
+Peugeot,508 PSE,360,520,1600,8.5
+Peugeot,Rifter,130,230,1500,6.5
+Peugeot,Partner,130,230,1500,6.8
+Peugeot,Expert,177,400,2000,7.5
+Peugeot,Boxer,165,370,2200,8.5
+Peugeot,e-208,156,260,0,0
+Peugeot,e-2008,156,260,0,0
+Peugeot,e-308,156,260,0,0
+Peugeot,e-3008,320,510,0,0
+Peugeot,e-5008,320,510,0,0
+Peugeot,RCZ,270,330,1600,7.8
+Porsche,718 Cayman,300,380,2000,7.8
+Porsche,718 Boxster,300,380,2000,7.9
+Porsche,911 Carrera,379,450,3000,9.0
+Porsche,911 Carrera S,443,530,3000,9.5
+Porsche,911 Turbo,572,750,3700,11.5
+Porsche,911 Turbo S,640,800,3700,12.0
+Porsche,911 GT3,502,470,4000,12.5
+Porsche,911 GT3 RS,518,465,4000,13.0
+Porsche,Panamera,330,450,3000,8.8
+Porsche,Panamera Turbo,620,820,4000,11.5
+Porsche,Cayenne,335,450,3000,9.0
+Porsche,Cayenne S,434,550,2900,9.8
+Porsche,Cayenne Turbo GT,650,850,4000,12.5
+Porsche,Macan,265,400,2000,8.5
+Porsche,Macan S,380,520,2900,9.5
+Porsche,Taycan,402,650,0,0
+Porsche,Taycan Turbo,616,850,0,0
+Porsche,Taycan Turbo S,750,1050,0,0
+Porsche,918 Spyder,887,1280,4600,3.0
+Infiniti,Q50,300,400,3000,9.0
+Infiniti,Q50 Red Sport,400,475,3000,9.8
+Infiniti,Q60,300,400,3000,9.2
+Infiniti,Q60 Red Sport,400,475,3000,9.9
+Infiniti,Q70,330,550,3700,10.5
+Infiniti,QX50,268,380,2000,8.2
+Infiniti,QX55,268,380,2000,8.5
+Infiniti,QX60,295,366,3500,10.2
+Infiniti,QX80,400,560,5600,14.5
+Infiniti,Q30,156,250,1600,6.5
+Infiniti,QX30,211,350,2000,7.5
+Infiniti,FX50,390,500,5000,13.5
+Infiniti,EX35,295,366,3500,9.8
+Infiniti,QX70,390,500,5000,12.8
+Maserati,Ghibli,350,500,3000,10.5
+Maserati,Ghibli Trofeo,580,730,3800,12.5
+Maserati,Quattroporte,350,500,3000,10.8
+Maserati,Quattroporte Trofeo,580,730,3800,12.8
+Maserati,Levante,350,500,3000,11.0
+Maserati,Levante Trofeo,580,730,3800,13.0
+Maserati,Grecale,296,450,2000,8.5
+Maserati,Grecale Trofeo,523,620,3000,9.5
+Maserati,MC20,621,730,3000,12.0
+Maserati,MC20 Cielo,621,730,3000,12.2
+Maserati,GranTurismo,490,600,3000,11.5
+Maserati,GranTurismo Trofeo,550,650,3000,12.0
+Maserati,GranCabrio,550,650,3000,12.5
+Maserati,Alfieri Concept,0,0,0,0
+Maserati,Birdcage 75th Concept,0,0,0,0
+Renault,Clio,130,240,1200,5.5
+Renault,Clio RS,200,280,1600,7.5
+Renault,Megane,160,270,1400,6.5
+Renault,Megane RS,300,400,1800,8.8
+Renault,Talisman,200,320,1600,7.5
+Renault,Kadjar,160,270,1600,7.2
+Renault,Koleos,190,380,2000,8.5
+Renault,Captur,140,240,1300,6.2
+Renault,Arkana,140,260,1300,6.3
+Renault,Scenic,160,270,1600,7.0
+Renault,Austral,200,330,1600,6.8
+Renault,Symbioz,200,330,1600,6.7
+Renault,5 EV,150,245,0,0
+Renault,Megane E-Tech,220,300,0,0
+Renault,Alpine A110,300,340,1800,7.8
+SEAT,Ibiza,115,200,1000,5.4
+SEAT,Leon,150,250,1400,6.2
+SEAT,Leon FR,190,320,2000,7.0
+SEAT,Arona,115,200,1000,5.8
+SEAT,Ateca,150,250,1500,7.0
+SEAT,Tarraco,190,320,2000,7.8
+SEAT,Toledo,125,200,1200,6.5
+SEAT,Mii,83,120,1000,4.8
+Skoda,Fabia,110,200,1000,5.2
+Skoda,Scala,150,250,1400,6.0
+Skoda,Octavia,190,320,2000,6.5
+Skoda,Octavia RS,245,370,2000,7.5
+Skoda,Superb,280,350,2000,7.8
+Skoda,Kodiaq,190,320,2000,7.8
+Skoda,Karoq,150,250,1500,6.8
+Skoda,Kamiq,115,200,1000,5.8
+Skoda,Enyaq iV,299,460,0,0
+Skoda,Enyaq Coupe RS,340,545,0,0
+Skoda,Roomster,105,175,1400,6.8
+Skoda,Yeti,140,250,1400,7.2
+Subaru,Impreza,152,196,2000,6.5
+Subaru,WRX,271,350,2400,8.2
+Subaru,WRX STI,310,393,2500,9.5
+Subaru,BRZ,228,250,2400,7.8
+Subaru,Outback,182,239,2500,7.8
+Subaru,Forester,182,239,2500,7.6
+Subaru,Crosstrek,152,196,2000,6.8
+Subaru,Ascent,260,376,3600,9.5
+Subaru,Legacy,182,239,2500,7.5
+Subaru,Solterra,218,336,0,0
+MINI,Cooper,136,220,1500,5.5
+MINI,Cooper S,178,280,2000,6.2
+MINI,John Cooper Works,231,320,2000,7.0
+MINI,Countryman,178,280,2000,6.8
+MINI,Countryman JCW,306,450,2000,8.5
+MINI,Clubman,192,280,2000,6.5
+MINI,Convertible,178,280,2000,6.8
+MINI,Electric Cooper SE,184,270,0,0
+MINI,Aceman,218,330,0,0
+Lotus,Elise,220,250,1800,6.5
+Lotus,Exige,380,410,3500,8.5
+Lotus,Evora,416,430,3500,9.0
+Lotus,Emira,400,430,3500,8.8
+Lotus,Eletre,603,710,0,0
+Lotus,Emeya,905,985,0,0
+Lotus,Evija,1972,1700,0,0
+Polestar,2,408,660,0,0
+Polestar,2 Long Range,476,740,0,0
+Polestar,3,517,910,0,0
+Polestar,4,544,686,0,0
+Polestar,Precept,600,900,0,0
+Dongfeng,AX7,190,300,1600,7.4
+Dongfeng,AX4,140,230,1400,6.5
+Dongfeng,AX5,165,260,1500,6.8
+Dongfeng,Fengon 580,184,300,1500,7.2
+Dongfeng,Forthing T5,190,300,1600,7.5
+Dongfeng,Forthing T5 EVO,197,320,1600,7.8
+Dongfeng,Mage,204,305,1500,7.2
+Dongfeng,Rich 6,163,380,2800,8.8
+Dongfeng,DFSK Glory 580,150,220,1500,7.0
+Dongfeng,Voyah Free,489,720,0,0
+Dongfeng,Voyah Dream,435,620,0,0
+Dongfeng,Box EV,94,160,0,0
