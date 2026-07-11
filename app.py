@@ -194,10 +194,14 @@ if not df.empty and 'Make' in df.columns and 'Model' in df.columns:
         y2 = st.selectbox("سنة الصنع 2:", YEARS_LIST, key="y2")
         st.markdown('</div>', unsafe_allow_html=True)
 
-    st.write("")
-    center = st.columns([1, 2, 1])
-    with center[1]:
-        analyze_clicked = st.button("⚡ ابدأ المقارنه")
+    # إضافة مساحة فارغة لترتيب الصفحة
+    st.write("---") 
+    
+    # إنشاء أعمدة لتوسيط الزر (عمود فارغ، عمود للزر، عمود فارغ)
+    btn_col1, btn_col2, btn_col3 = st.columns([1, 2, 1])
+    
+    with btn_col2:
+        analyze_clicked = st.button("⚡ ابدأ المقارنة التقنية")
 
     if analyze_clicked:
         with st.spinner("🔧 جاري تحليل الأداء والمقارنة التقنية..."):
