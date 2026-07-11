@@ -13,15 +13,14 @@ st.markdown("---")
 @st.cache_data
 def load_data():
     try:
-        # قراءة ملف الإكسل مباشرة
-        df = pd.read_excel("cars_data.xlsx")
-        # تنظيف أسماء الأعمدة من أي فراغات
+        # قراءة ملف الإكسل
+        df = pd.read_excel("cars_data.xlsx") 
+        # تنظيف أسماء الأعمدة
         df.columns = df.columns.str.strip()
         return df
     except Exception as e:
-        st.error(f"خطأ في قراءة ملف الإكسل: {e}")
+        st.error(f"خطأ في قراءة ملف البيانات: {e}")
         return pd.DataFrame()
-
 df = load_data()
 
 # 3. دالة التحليل
