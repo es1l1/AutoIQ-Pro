@@ -20,13 +20,10 @@ st.markdown("---")
 # 2. تحميل البيانات مع معالجة الفاصلة المنقوطة (sep=';')
 @st.cache_data
 def load_data():
-    try:
-        # قراءة الملف مع تحديد الفاصلة المنقوطة
-        df = pd.read_csv("cars_data.csv", sep=';')
-        # تنظيف أسماء الأعمدة من أي فراغات إضافية
-        df.columns = df.columns.str.strip()
-        return df
-    except Exception as e:
+    # إضافة encoding='utf-8-sig' يساعد في إزالة الرموز غير المرئية في بداية الملف
+    df = pd.read_csv("cars_data.csv", sep=';', encoding='utf-8-sig')
+    df.columns = df.columns.str.strip()
+    return df    except Exception as e:
         st.error(f"خطأ في قراءة ملف البيانات: {e}")
         return pd.DataFrame()
 
