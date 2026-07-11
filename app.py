@@ -72,24 +72,27 @@ st.markdown("""
         padding-bottom: 10px;
     }
 
-    div.stButton > button {
-        width: 60%;
+div.stButton > button {
+        width: 100%;           /* سيأخذ العرض الكامل للعمود الذي يوضع فيه */
+        max-width: 400px;      /* تحديد عرض أقصى ليبقى متناسقاً */
         display: block;
-        margin: 20px auto;
+        margin: 20px auto;     /* توسيط الزر في منتصف الصفحة */
         background: linear-gradient(90deg, #007bff, #ff2d2d);
         color: white;
         font-weight: 900;
-        font-size: 1.4rem;
-        padding: 15px 40px;
-        border-radius: 50px;
+        font-size: 1.2rem;     /* حجم خط مريح للعين */
+        padding: 18px 0;       /* زيادة المساحة الداخلية ليكون الزر "ضخماً" وفخماً */
+        border-radius: 12px;   /* زوايا ناعمة وعصرية */
         border: none;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        transition: 0.4s;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        text-align: center;    /* لضمان توسيط النص */
     }
 
     div.stButton > button:hover {
-        transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 15px 30px rgba(255, 45, 45, 0.4);
+        transform: scale(1.02);
+        box-shadow: 0 8px 25px rgba(255, 45, 45, 0.4);
+        background: linear-gradient(90deg, #ff2d2d, #007bff); /* عكس الألوان عند التمرير */
     }
 
     .report-box {
