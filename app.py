@@ -33,54 +33,85 @@ st.markdown("""
     }
 
     .stApp {
-        background: radial-gradient(circle at 50% -20%, #1a2a3a 0%, #0a0a0a 70%, #000000 100%);
-        color: #e0e0e0;
+        background: radial-gradient(circle at 50% 0%, #16213e 0%, #0f0f0f 70%, #000000 100%);
     }
 
     .autoiq-title {
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 900;
-        background: linear-gradient(90deg, #007bff, #ffffff, #ff2d2d);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #ffffff;
         text-align: center;
         margin-bottom: 5px;
     }
 
+    .autoiq-subtitle {
+        text-align: center;
+        color: #007bff;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    }
+
     .car-card {
-        background: rgba(255, 255, 255, 0.03);
-        border-right: 4px solid #007bff;
-        border-radius: 12px;
-        padding: 20px;
-        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 25px;
+        backdrop-filter: blur(15px);
+        transition: 0.3s;
+    }
+
+    .car-card-title {
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
     }
 
     div.stButton > button {
-        width: 100%;
-        background: linear-gradient(90deg, #007bff, #0056b3);
+        width: 60%;
+        display: block;
+        margin: 20px auto;
+        background: linear-gradient(90deg, #007bff, #ff2d2d);
         color: white;
-        font-weight: 800;
+        font-weight: 900;
+        font-size: 1.4rem;
+        padding: 15px 40px;
+        border-radius: 50px;
         border: none;
-        border-radius: 8px;
-        padding: 15px;
-        transition: 0.3s;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        transition: 0.4s;
     }
 
     div.stButton > button:hover {
-        background: linear-gradient(90deg, #ff2d2d, #cc0000);
-        transform: scale(1.02);
-        box-shadow: 0 0 20px rgba(255, 45, 45, 0.4);
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 30px rgba(255, 45, 45, 0.4);
     }
 
     .report-box {
-        background: rgba(0, 0, 0, 0.4);
-        border: 1px solid #333;
-        border-left: 5px solid #ff2d2d;
-        border-radius: 10px;
-        padding: 25px;
-        line-height: 1.8;
+        background: rgba(0, 0, 0, 0.5);
+        border-top: 5px solid #007bff;
+        border-bottom: 5px solid #ff2d2d;
+        border-radius: 20px;
+        padding: 35px;
+        color: #ffffff;
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+    
+    .vs-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: #ff2d2d;
+        height: 100%;
+        text-shadow: 0 0 15px rgba(255, 45, 45, 0.6);
     }
     </style>
 """, unsafe_allow_html=True)
