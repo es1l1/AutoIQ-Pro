@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 import pandas as pd
-from openai import OpenAI, APIError, APIConnectionError, AuthenticationError
 
 # =========================================================
 # 1. إعداد الصفحة
