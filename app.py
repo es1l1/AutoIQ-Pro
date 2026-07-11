@@ -96,7 +96,7 @@ st.markdown(f"""
     .car-card-title {{
         font-size: 1.2rem;
         font-weight: 800;
-        color: #ffb100;
+        color: #0091ff;
         margin-bottom: 14px;
         text-align: center;
     }}
@@ -118,7 +118,7 @@ st.markdown(f"""
     div.stButton > button:hover {{
         transform: translateY(-2px) scale(1.01);
         box-shadow: 0 10px 26px rgba(255,45,45,0.5);
-        background: linear-gradient(90deg, #ffb100, #ff2d2d);
+        background: linear-gradient(90deg, #0091ff, #372dff);
         color: #000;
     }}
 
