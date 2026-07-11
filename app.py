@@ -1,58 +1,66 @@
+import streamlit as st
+import pandas as pd
 import os
 from openai import OpenAI
-from dotenv import load_dotenv
-from typing import Dict, Any
-load_dotenv()
-client = OpenAI(
-    api_key=os.getenv("GROQ_API_KEY"),
-    base_url="https://api.groq.com/openai/v1"
-)
 
-def analyze_cars_technical(
-    car1: Dict[str, Any],
-    car2: Dict[str, Any],
-    usage: str
-) -> str:
-    """
-    تحليل تقني دقيق يعتمد على سنة الصنع لاستدعاء المواصفات الصحيحة.
-    """
+# إعداد واجهة الصفحة
+st.set_page_config(page_title="AutoIQ AI Expert", layout="wide")
+st.title("🚗 AutoIQ AI Expert")
+st.subheader("مقارنة تقنية دقيقة بين السيارات")
+
+# إعداد العميل (الاعتماد على Streamlit Secrets في السحابة)
+def get_client():
+    api_key = st.secrets.get("GROQ_API_KEY") or os.environ.get("GROQ_API_KEY")
+    return OpenAI(api_key=api_key, base_url="https://api.groq.com/openai/v1")
+
+# تحميل البيانات
+@st.cache_data
+def load_data():
+    return pd.read_csv("cars_data.csv")
+
+df = load_data()
+
+# دالة التحليل
+def analyze_cars_technical(car1, car2):
+    client = get_client()
     prompt = f"""
-أنت مهندس سيارات خبير. مهمتك هي إجراء مقارنة تقنية دقيقة جداً بين سيارتين.
-بناءً على الماركة والفئة وسنة الصنع المذكورة، استخدم معرفتك التقنية لاسترجاع المواصفات (القوة بالحصان، العزم، المحرك) الخاصة بكل سنة صنع محددة بدقة.
-
-السيارات للمقارنة:
-1. {car1['Make']} {car1['Model']} موديل {car1['Year']}
-2. {car2['Make']} {car2['Model']} موديل {car2['Year']}
-
-نوع الاستخدام: {usage}
-
-المطلوب:
-1. جدول مقارنة سريع يوضح (القوة بالحصان، العزم، نوع المحرك) لكل سيارة في سنتها المحددة.
-2. تحليل دقيق: لماذا قد تكون موديلات معينة (مثل 2023 مقابل 2025) أقوى أو أضعف؟ (وضح الفروقات التقنية مثل التيربو، عدد الاحصنة، إلخ).
-3. بناءً على الأرقام التقنية الحقيقية لهذه السنوات، أيهما يخدم نوع الاستخدام المذكور بشكل أفضل؟
-4. نصيحة شراء نهائية مبنية على الأداء التقني.
-
-تنبيه: التزم بالأرقام التقنية الدقيقة لكل سنة صنع. إذا كانت هناك فروقات جوهرية بسبب اختلاف الأجيال، وضحها.
-"""
-
+    أنت مهندس سيارات خبير. قارن تقنياً بين:
+    1. {car1['Make']} {car1['Model']} موديل {car1['Year']}
+    2. {car2['Make']} {car2['Model']} موديل {car2['Year']}
+    
+    المطلوب: جدول مقارنة (قوة، عزم، محرك)، تحليل فروقات الأجيال، وأيهما أفضل للأداء.
+    """
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.2 # تقليل الحرارة لضمان الدقة في الأرقام
+        temperature=0.2
     )
     return response.choices[0].message.content
 
-# مثال للاختبار:
-c1 = {"Make": "Toyota", "Model": "Camry", "Year": 2023}
-c2 = {"Make": "Toyota", "Model": "Camry", "Year": 2025}
-print(analyze_cars_technical(c1, c2, "استخدام رياضي"))
-import streamlit as st
-# ... باقي الـ imports التي أضفناها سابقاً ...
+# واجهة القوائم المنسدلة
+col1, col2 = st.columns(2)
 
-st.title("AutoIQ AI Expert")
+with col1:
+    st.markdown("### السيارة الأولى")
+    m1 = st.selectbox("الماركة 1:", df['Make'].unique(), key="m1")
+    f1 = st.selectbox("الفئة 1:", df[df['Make'] == m1]['Model'].unique(), key="f1")
+    y1 = st.selectbox("السنة 1:", range(2015, 2027), key="y1")
 
-# تجربة عرض بسيطة
-if st.button("اختبار الاتصال"):
-    st.write("الكود يعمل بنجاح!")
+with col2:
+    st.markdown("### السيارة الثانية")
+    m2 = st.selectbox("الماركة 2:", df['Make'].unique(), key="m2")
+    f2 = st.selectbox("الفئة 2:", df[df['Make'] == m2]['Model'].unique(), key="f2")
+    y2 = st.selectbox("السنة 2:", range(2015, 2027), key="y2")
+
+# زر التنفيذ
+if st.button("بدء التحليل التقني"):
+    c1 = {"Make": m1, "Model": f1, "Year": y1}
+    c2 = {"Make": m2, "Model": f2, "Year": y2}
     
-# ... باقي كودك (الدالة analyze_cars_technical) ...
+    with st.spinner("جاري استحضار البيانات التقنية..."):
+        try:
+            report = analyze_cars_technical(c1, c2)
+            st.markdown("---")
+            st.markdown(report)
+        except Exception as e:
+            st.error(f"حدث خطأ أثناء الاتصال بالذكاء الاصطناعي: {e}")
