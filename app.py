@@ -191,7 +191,7 @@ st.markdown(
 # =========================================================
 # الشعار + العنوان
 # =========================================================
-LOGO_URL = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/logo.png"
+LOGO_URL = "https://raw.githubusercontent.com/es1l1/AutoIQ-Pro/main/logo.png"
 
 try:
     st.image(LOGO_URL, use_container_width=True)
