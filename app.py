@@ -263,24 +263,99 @@ client = OpenAI(
 # دالة التحليل: نطلب من النموذج إخراج JSON منظم باللغة العربية
 # =========================================================
 def analyze_cars(car1, car2):
+
+    car1_label = f"{car1['Make']} {car1['Model']} {car1['Year']}"
+    car2_label = f"{car2['Make']} {car2['Model']} {car2['Year']}"
+
     prompt = f"""
-    قارن تقنياً بين {car1['Make']} {car1['Model']} و {car2['Make']} {car2['Model']}.
-    أعطني النتيجة في جدول HTML منظم يبدأ بـ <table> وينتهي بـ </table>. 
-    يجب أن تكون الجداول داخل وسوم <tr> و <td>.
-    أضف بعد الجدول فقرة قصيرة لنصيحة الشراء.
-    """
-    # ... باقي الكود
+أنت خبير سيارات محترف.
+
+قارن بين:
+
+السيارة الأولى:
+{car1_label}
+
+والسيارة الثانية:
+{car2_label}
+
+اعتمد على المواصفات المعروفة لهذه الفئات والموديلات وسنة الصنع المحددة.
+
+أعد النتيجة بصيغة JSON فقط بدون أي شرح إضافي.
+
+الصيغة المطلوبة:
+
+{{
+  "table_rows":[
+    {{
+      "spec":"المحرك",
+      "car1":"",
+      "car2":""
+    }},
+    {{
+      "spec":"القوة الحصانية",
+      "car1":"",
+      "car2":""
+    }},
+    {{
+      "spec":"العزم",
+      "car1":"",
+      "car2":""
+    }},
+    {{
+      "spec":"التسارع 0-100 كم/س",
+      "car1":"",
+      "car2":""
+    }},
+    {{
+      "spec":"السرعة القصوى",
+      "car1":"",
+      "car2":""
+    }},
+    {{
+      "spec":"استهلاك الوقود",
+      "car1":"",
+      "car2":""
+    }},
+    {{
+      "spec":"نظام الدفع",
+      "car1":"",
+      "car2":""
+    }}
+  ],
+
+  "performance_analysis":"",
+
+  "luxury_analysis":"",
+
+  "winner":"",
+
+  "winner_reason":"",
+
+  "final_recommendation":""
+}}
+
+أرجع JSON فقط.
+"""
 
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
             {
+                "role": "system",
+                "content": "أنت خبير سيارات عالمي ومتخصص في المقارنات التقنية."
+            },
+            {
                 "role": "user",
                 "content": prompt
             }
         ],
-        temperature=0.2
+        temperature=0.2,
+        max_tokens=2500
     )
+
+    raw_text = response.choices[0].message.content.strip()
+
+    return raw_text, car1_label, car2_label
 
     raw_text = response.choices[0].message.content.strip()
     return raw_text, car1_label, car2_label
