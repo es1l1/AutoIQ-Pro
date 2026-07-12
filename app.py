@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # =========================================================
-# التنسيق العام: عربي RTL + ألوان أزرق/أحمر (روح السرعة)
+# التنسيق العام: عربي RTL + هوية بصرية أزرق/أحمر (روح السرعة)
 # =========================================================
 st.markdown(
     """
@@ -29,32 +29,44 @@ st.markdown(
         --speed-red-dark: #8E0F13;
         --dark-bg: #0E1117;
         --card-bg: #161B24;
+        --muted-text: #9aa4b2;
     }
 
-    html, body, [class*="css"]  {
+    html, body, [class*="css"] {
         font-family: 'Tajawal', sans-serif;
         direction: rtl;
     }
 
-    /* عناوين */
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Tajawal', sans-serif !important;
         text-align: right;
     }
 
-    /* الحاوية الرئيسية */
     .block-container {
         direction: rtl;
+        padding-top: 1.2rem;
+        max-width: 1200px;
+    }
+
+    /* شعار مركزي أنيق بدل التمدد الكامل */
+    .logo-wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+    .logo-wrap img {
+        max-width: 130px;
+        border-radius: 16px;
     }
 
     /* عنوان التطبيق */
     .autoiq-header {
         background: linear-gradient(90deg, var(--speed-blue) 0%, var(--speed-blue-light) 45%, var(--speed-red) 100%);
-        padding: 28px 24px;
-        border-radius: 14px;
+        padding: 30px 24px;
+        border-radius: 16px;
         text-align: center;
-        margin-bottom: 22px;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+        margin-bottom: 26px;
+        box-shadow: 0 10px 28px rgba(0,0,0,0.4);
     }
     .autoiq-header h1 {
         color: #fff !important;
@@ -62,21 +74,23 @@ st.markdown(
         font-weight: 900;
         text-align: center;
         letter-spacing: 1px;
-        font-size: 2.1rem;
+        font-size: 2.2rem;
     }
     .autoiq-header p {
         color: #eef2ff;
-        margin: 6px 0 0 0;
+        margin: 8px 0 0 0;
         text-align: center;
         font-size: 1.05rem;
+        opacity: 0.95;
     }
 
     /* بطاقات اختيار السيارة */
     .car-card {
         background: var(--card-bg);
-        border-radius: 14px;
-        padding: 18px 18px 6px 18px;
+        border-radius: 16px;
+        padding: 20px 20px 8px 20px;
         border-top: 4px solid;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.25);
     }
     .car-card-1 { border-color: var(--speed-blue-light); }
     .car-card-2 { border-color: var(--speed-red); }
@@ -84,6 +98,7 @@ st.markdown(
     .car-card h3 {
         text-align: center;
         margin-top: 0;
+        font-weight: 800;
     }
     .car-card-1 h3 { color: var(--speed-blue-light); }
     .car-card-2 h3 { color: var(--speed-red); }
@@ -95,7 +110,7 @@ st.markdown(
         font-weight: 700;
         font-size: 1.15rem;
         border: none;
-        border-radius: 10px;
+        border-radius: 12px;
         padding: 14px 0;
         transition: 0.2s ease-in-out;
         box-shadow: 0 6px 16px rgba(215,25,32,0.35);
@@ -110,10 +125,10 @@ st.markdown(
     .compare-wrap {
         direction: rtl;
         margin-top: 10px;
-        margin-bottom: 22px;
-        border-radius: 14px;
+        margin-bottom: 24px;
+        border-radius: 16px;
         overflow: hidden;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+        box-shadow: 0 8px 22px rgba(0,0,0,0.35);
     }
     table.compare-table {
         width: 100%;
@@ -124,9 +139,9 @@ st.markdown(
     table.compare-table th {
         background: linear-gradient(90deg, var(--speed-blue) 0%, var(--speed-blue-light) 100%);
         color: #fff;
-        padding: 14px 10px;
+        padding: 15px 10px;
         text-align: center;
-        font-size: 1.02rem;
+        font-size: 1.05rem;
     }
     table.compare-table th.spec-col {
         background: var(--dark-bg);
@@ -135,7 +150,7 @@ st.markdown(
         background: linear-gradient(90deg, var(--speed-red-dark) 0%, var(--speed-red) 100%);
     }
     table.compare-table td {
-        padding: 12px 10px;
+        padding: 13px 10px;
         text-align: center;
         border-bottom: 1px solid rgba(255,255,255,0.08);
         color: #e6e6e6;
@@ -153,35 +168,52 @@ st.markdown(
     /* بطاقة الفائز */
     .winner-card {
         background: linear-gradient(90deg, var(--speed-blue) 0%, var(--speed-red) 100%);
-        border-radius: 14px;
-        padding: 18px;
+        border-radius: 16px;
+        padding: 20px;
         text-align: center;
         color: #fff;
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         font-weight: 800;
-        margin-bottom: 20px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+        margin-bottom: 22px;
+        box-shadow: 0 10px 24px rgba(0,0,0,0.4);
     }
 
     /* أقسام التقرير */
     .report-section {
         background: var(--card-bg);
         border-right: 5px solid var(--speed-blue-light);
-        border-radius: 10px;
-        padding: 16px 20px;
-        margin-bottom: 14px;
+        border-radius: 12px;
+        padding: 18px 22px;
+        margin-bottom: 16px;
         text-align: right;
         direction: rtl;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
     .report-section h4 {
         color: var(--speed-blue-light);
         margin-top: 0;
+        font-weight: 800;
+    }
+    .report-section p {
+        color: #dfe4ea;
+        line-height: 1.9;
+        margin-bottom: 0;
     }
     .report-section.red-accent {
         border-right-color: var(--speed-red);
     }
     .report-section.red-accent h4 {
         color: var(--speed-red);
+    }
+
+    /* تذييل */
+    .autoiq-footer {
+        text-align: center;
+        color: var(--muted-text);
+        font-size: 0.85rem;
+        margin-top: 30px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(255,255,255,0.08);
     }
     </style>
     """,
@@ -191,25 +223,31 @@ st.markdown(
 # =========================================================
 # الشعار + العنوان
 # =========================================================
-LOGO_URL = "https://raw.githubusercontent.com/es1l1/AutoIQ-Pro/main/logo.png"
+# الشعار مرفوع بالفعل داخل نفس المستودع (logo.png بجانب app.py)
+# لذلك نقرأه محلياً بدل جلبه عبر رابط خارجي — يعمل حتى لو كان
+# المستودع على GitHub خاصاً (private)، لأن raw.githubusercontent.com
+# لا يعرض ملفات من مستودع خاص لغير المسجلين دخولهم.
+LOGO_PATH = "logo.png"
 
-try:
-    st.image(LOGO_URL, use_container_width=True)
-except Exception:
-    pass
+if os.path.exists(LOGO_PATH):
+    col_l, col_c, col_r = st.columns([1, 1, 1])
+    with col_c:
+        st.image(LOGO_PATH, width=140)
+else:
+    st.info("لم يتم العثور على ملف الشعار logo.png في نفس مجلد التطبيق.")
 
 st.markdown(
     """
     <div class="autoiq-header">
         <h1>🚗 AutoIQ AI Expert</h1>
-        <p>مقارنة تقنية ذكية بين السيارات</p>
+        <p>مقارنة تقنية ذكية بين السيارات مدعومة بالذكاء الاصطناعي</p>
     </div>
     """,
     unsafe_allow_html=True
 )
 
 # =========================================================
-# تحميل البيانات
+# تحميل البيانات (ملف يحتوي فقط على الماركة والفئة)
 # =========================================================
 @st.cache_data
 def load_data():
@@ -218,7 +256,7 @@ def load_data():
         df.columns = df.columns.str.strip()
         return df
     except FileNotFoundError:
-        st.error("ملف 'cars_data.xlsx' غير موجود. تأكد من رفعه إلى مستودع GitHub.")
+        st.error("ملف 'cars_data.xlsx' غير موجود. تأكد من رفعه إلى مستودع GitHub بجانب app.py.")
         return None
     except Exception as e:
         st.error(f"خطأ أثناء قراءة ملف الإكسيل: {e}")
@@ -230,7 +268,7 @@ if df is None:
     st.stop()
 
 # =========================================================
-# فحص الأعمدة
+# فحص الأعمدة (الملف يحتوي فقط على Make و Model، والسنة تُختار يدوياً)
 # =========================================================
 required_columns = ["Make", "Model"]
 missing = [c for c in required_columns if c not in df.columns]
@@ -250,7 +288,7 @@ api_key = st.secrets.get("GROQ_API_KEY") or os.environ.get("GROQ_API_KEY")
 if not api_key:
     st.error(
         "GROQ_API_KEY غير موجود.\n"
-        "أضفه في Streamlit Secrets."
+        "أضفه في Streamlit Secrets (Settings → Secrets)."
     )
     st.stop()
 
@@ -260,102 +298,52 @@ client = OpenAI(
 )
 
 # =========================================================
-# دالة التحليل: نطلب من النموذج إخراج JSON منظم باللغة العربية
+# دالة التحليل: الذكاء الاصطناعي يعتمد فقط على الماركة/الفئة/السنة
+# ويُعيد JSON منظم نستخدمه لبناء جدول ومحتوى احترافي
 # =========================================================
 def analyze_cars(car1, car2):
 
-    car1_label = f"{car1['Make']} {car1['Model']} {car1['Year']}"
-    car2_label = f"{car2['Make']} {car2['Model']} {car2['Year']}"
+    car1_label = f"{car1['Make']} {car1['Model']} ({car1['Year']})"
+    car2_label = f"{car2['Make']} {car2['Model']} ({car2['Year']})"
 
     prompt = f"""
-أنت خبير سيارات محترف.
+أنت خبير سيارات محترف. قارن تقنياً بين السيارتين التاليتين واعتمد فقط على معرفتك العامة بهما
+(الماركة والفئة وسنة الصنع)، وأجب باللغة العربية الفصحى حصراً.
 
-قارن بين:
+السيارة الأولى: {car1_label}
+السيارة الثانية: {car2_label}
 
-السيارة الأولى:
-{car1_label}
-
-والسيارة الثانية:
-{car2_label}
-
-اعتمد على المواصفات المعروفة لهذه الفئات والموديلات وسنة الصنع المحددة.
-
-أعد النتيجة بصيغة JSON فقط بدون أي شرح إضافي.
-
-الصيغة المطلوبة:
+أعد الإجابة بصيغة JSON صحيحة فقط، بدون أي نص إضافي قبله أو بعده، وبدون علامات ```، وفق الهيكل التالي بالضبط:
 
 {{
-  "table_rows":[
-    {{
-      "spec":"المحرك",
-      "car1":"",
-      "car2":""
-    }},
-    {{
-      "spec":"القوة الحصانية",
-      "car1":"",
-      "car2":""
-    }},
-    {{
-      "spec":"العزم",
-      "car1":"",
-      "car2":""
-    }},
-    {{
-      "spec":"التسارع 0-100 كم/س",
-      "car1":"",
-      "car2":""
-    }},
-    {{
-      "spec":"السرعة القصوى",
-      "car1":"",
-      "car2":""
-    }},
-    {{
-      "spec":"استهلاك الوقود",
-      "car1":"",
-      "car2":""
-    }},
-    {{
-      "spec":"نظام الدفع",
-      "car1":"",
-      "car2":""
-    }}
+  "table_rows": [
+    {{"spec": "القوة الحصانية", "car1": "قيمة", "car2": "قيمة"}},
+    {{"spec": "عزم الدوران", "car1": "قيمة", "car2": "قيمة"}},
+    {{"spec": "التسارع من 0-100 كم/س", "car1": "قيمة", "car2": "قيمة"}},
+    {{"spec": "السرعة القصوى", "car1": "قيمة", "car2": "قيمة"}},
+    {{"spec": "ناقل الحركة", "car1": "قيمة", "car2": "قيمة"}},
+    {{"spec": "استهلاك الوقود", "car1": "قيمة", "car2": "قيمة"}}
   ],
-
-  "performance_analysis":"",
-
-  "luxury_analysis":"",
-
-  "winner":"",
-
-  "winner_reason":"",
-
-  "final_recommendation":""
+  "performance_analysis": "فقرة تحليل الأداء الرياضي والتسارع",
+  "luxury_analysis": "فقرة تحليل مستوى الفخامة والتجهيزات",
+  "winner": "اسم السيارة الأفضل بشكل عام",
+  "winner_reason": "جملة قصيرة توضح سبب الاختيار",
+  "final_recommendation": "فقرة نصيحة شراء نهائية للمستخدم"
 }}
 
-أرجع JSON فقط.
+اجعل القيم دقيقة وواقعية قدر الإمكان بناءً على معرفتك بالسيارتين المذكورتين.
 """
 
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
             {
-                "role": "system",
-                "content": "أنت خبير سيارات عالمي ومتخصص في المقارنات التقنية."
-            },
-            {
                 "role": "user",
                 "content": prompt
             }
         ],
-        temperature=0.2,
-        max_tokens=2500
+        temperature=0.2
     )
-
-    raw_text = response.choices[0].message.content.strip()
-
-    return raw_text, car1_label, car2_label
 
     raw_text = response.choices[0].message.content.strip()
     return raw_text, car1_label, car2_label
@@ -527,3 +515,12 @@ if st.button("⚡ ابدأ التحليل", use_container_width=True):
 
         except Exception as e:
             st.error(f"حدث خطأ أثناء التحليل:\n{e}")
+
+st.markdown(
+    """
+    <div class="autoiq-footer">
+        AutoIQ AI Expert — مدعوم بواسطة Groq &amp; Llama 3.3
+    </div>
+    """,
+    unsafe_allow_html=True
+)
