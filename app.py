@@ -121,48 +121,98 @@ st.markdown(
         color: #fff;
     }
 
-    /* جدول المقارنة المخصص */
+    /* ============================================
+       جدول المقارنة - نسخة احترافية عالمية المستوى
+       ============================================ */
     .compare-wrap {
         direction: rtl;
         margin-top: 10px;
-        margin-bottom: 24px;
-        border-radius: 16px;
+        margin-bottom: 26px;
+        border-radius: 18px;
         overflow: hidden;
-        box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+        border: 1px solid rgba(255,255,255,0.06);
     }
     table.compare-table {
         width: 100%;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
         direction: rtl;
         font-family: 'Tajawal', sans-serif;
+        background: var(--card-bg);
     }
-    table.compare-table th {
-        background: linear-gradient(90deg, var(--speed-blue) 0%, var(--speed-blue-light) 100%);
+    table.compare-table thead th {
+        background: linear-gradient(135deg, var(--speed-blue) 0%, var(--speed-blue-light) 55%, var(--speed-red) 130%);
         color: #fff;
-        padding: 15px 10px;
+        padding: 18px 12px;
         text-align: center;
-        font-size: 1.05rem;
+        font-size: 1.08rem;
+        font-weight: 800;
+        letter-spacing: 0.3px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
-    table.compare-table th.spec-col {
+    table.compare-table thead th.spec-col {
         background: var(--dark-bg);
+        color: #cfd8ea;
+        border-left: 1px solid rgba(255,255,255,0.08);
     }
-    table.compare-table th.car2-col {
-        background: linear-gradient(90deg, var(--speed-red-dark) 0%, var(--speed-red) 100%);
+    table.compare-table thead th.car2-col {
+        background: linear-gradient(135deg, var(--speed-red-dark) 0%, var(--speed-red) 100%);
     }
+    table.compare-table thead th.car1-col {
+        background: linear-gradient(135deg, var(--speed-blue) 0%, var(--speed-blue-light) 100%);
+    }
+
+    table.compare-table tbody tr {
+        transition: background-color 0.18s ease-in-out, transform 0.18s ease-in-out;
+    }
+    table.compare-table tbody tr:nth-child(even) td {
+        background: rgba(255,255,255,0.025);
+    }
+    table.compare-table tbody tr:hover td {
+        background: rgba(30,111,235,0.12);
+    }
+    table.compare-table tbody tr:not(:last-child) td {
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
     table.compare-table td {
-        padding: 13px 10px;
+        padding: 14px 12px;
         text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
         color: #e6e6e6;
+        font-size: 0.98rem;
+        vertical-align: middle;
     }
     table.compare-table td.spec-cell {
         text-align: right;
         font-weight: 700;
-        background: rgba(255,255,255,0.03);
+        background: rgba(255,255,255,0.035);
         color: #c9d6ff;
+        border-left: 1px solid rgba(255,255,255,0.08);
+        white-space: nowrap;
     }
-    table.compare-table tr:nth-child(even) td {
-        background: rgba(255,255,255,0.02);
+
+    /* تمييز أفضل قيمة في كل صف (اختياري - يضبط عبر كلاس winner-cell) */
+    table.compare-table td.winner-cell {
+        color: #ffe9a8;
+        font-weight: 800;
+        position: relative;
+    }
+    table.compare-table td.winner-cell::after {
+        content: "★";
+        font-size: 0.75rem;
+        margin-right: 6px;
+        color: #ffd75e;
+    }
+
+    /* تجاوب للشاشات الصغيرة */
+    @media (max-width: 640px) {
+        table.compare-table th, table.compare-table td {
+            padding: 10px 6px;
+            font-size: 0.85rem;
+        }
     }
 
     /* بطاقة الفائز */
@@ -317,12 +367,12 @@ def analyze_cars(car1, car2):
 
 {{
   "table_rows": [
-    {{"spec": "القوة الحصانية", "car1": "قيمة", "car2": "قيمة"}},
-    {{"spec": "عزم الدوران", "car1": "قيمة", "car2": "قيمة"}},
-    {{"spec": "التسارع من 0-100 كم/س", "car1": "قيمة", "car2": "قيمة"}},
-    {{"spec": "السرعة القصوى", "car1": "قيمة", "car2": "قيمة"}},
-    {{"spec": "ناقل الحركة", "car1": "قيمة", "car2": "قيمة"}},
-    {{"spec": "استهلاك الوقود", "car1": "قيمة", "car2": "قيمة"}}
+    {{"spec": "القوة الحصانية", "car1": "قيمة", "car2": "قيمة", "better": "car1"}},
+    {{"spec": "عزم الدوران", "car1": "قيمة", "car2": "قيمة", "better": "car2"}},
+    {{"spec": "التسارع من 0-100 كم/س", "car1": "قيمة", "car2": "قيمة", "better": "car1"}},
+    {{"spec": "السرعة القصوى", "car1": "قيمة", "car2": "قيمة", "better": "car2"}},
+    {{"spec": "ناقل الحركة", "car1": "قيمة", "car2": "قيمة", "better": "none"}},
+    {{"spec": "استهلاك الوقود", "car1": "قيمة", "car2": "قيمة", "better": "car1"}}
   ],
   "performance_analysis": "فقرة تحليل الأداء الرياضي والتسارع",
   "luxury_analysis": "فقرة تحليل مستوى الفخامة والتجهيزات",
@@ -330,6 +380,10 @@ def analyze_cars(car1, car2):
   "winner_reason": "جملة قصيرة توضح سبب الاختيار",
   "final_recommendation": "فقرة نصيحة شراء نهائية للمستخدم"
 }}
+
+ملاحظة مهمة: حقل "better" في كل صف يجب أن يكون واحداً من ثلاث قيم فقط:
+"car1" إذا كانت السيارة الأولى أفضل في هذه المواصفة، أو "car2" إذا كانت السيارة الثانية أفضل،
+أو "none" إذا كانت المواصفة متعادلة أو غير قابلة للمقارنة (مثل نوع ناقل الحركة).
 
 اجعل القيم دقيقة وواقعية قدر الإمكان بناءً على معرفتك بالسيارتين المذكورتين.
 """
@@ -368,13 +422,27 @@ def parse_ai_json(raw_text):
 
 
 def render_comparison_table(table_rows, car1_label, car2_label):
+    """
+    يبني جدول مقارنة احترافي بتصميم عالمي المستوى، متناسق مع هوية
+    التطبيق البصرية (أزرق/أحمر - روح السرعة)، مع دعم تمييز القيمة
+    الأفضل في كل صف عبر حقل اختياري "better" (car1 / car2 / none).
+    التنسيقات (CSS) معرّفة مسبقاً في رأس الصفحة ضمن compare-table.
+    """
     rows_html = ""
     for row in table_rows:
+        spec = row.get("spec", "")
+        car1_val = row.get("car1", "")
+        car2_val = row.get("car2", "")
+        better = row.get("better", "none")
+
+        car1_class = "winner-cell" if better == "car1" else ""
+        car2_class = "winner-cell" if better == "car2" else ""
+
         rows_html += f"""
         <tr>
-            <td class="spec-cell">{row.get('spec', '')}</td>
-            <td>{row.get('car1', '')}</td>
-            <td>{row.get('car2', '')}</td>
+            <td class="spec-cell">{spec}</td>
+            <td class="{car1_class}">{car1_val}</td>
+            <td class="{car2_class}">{car2_val}</td>
         </tr>
         """
 
@@ -384,7 +452,7 @@ def render_comparison_table(table_rows, car1_label, car2_label):
             <thead>
                 <tr>
                     <th class="spec-col">المواصفة</th>
-                    <th>{car1_label}</th>
+                    <th class="car1-col">{car1_label}</th>
                     <th class="car2-col">{car2_label}</th>
                 </tr>
             </thead>
