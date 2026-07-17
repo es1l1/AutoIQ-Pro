@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+:root{
+    --speed-blue: #0B3D91;
+    --speed-blue-light: #1E6FEB;
+    --speed-red: #D71920;
+    --speed-red-dark: #8E0F13;
+    --dark-bg: #0E1117;
+    --card-bg: #161B24;
+    --muted-text: #9aa4b2;
+}
+
+html, body, [class*="css"] {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tajawal', sans-serif !important;
+    text-align: right;
+}
+
+.block-container {
+    direction: rtl;
+    padding-top: 1.2rem;
+    max-width: 1200px;
+}
+
+/* شعار مركزي أنيق بدل التمدد الكامل */
+.logo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+.logo-wrap img {
+    max-width: 130px;
+    border-radius: 16px;
+}
+
+/* عنوان التطبيق */
+.autoiq-header {
+    background: linear-gradient(90deg, var(--speed-blue) 0%, var(--speed-blue-light) 45%, var(--speed-red) 100%);
+    padding: 30px 24px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 26px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.4);
+}
+.autoiq-header h1 {
+    color: #fff !important;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+.autoiq-header p {
+    color: #eef2ff;
+    margin: 8px 0 0 0;
+    text-align: center;
+    font-size: 1.05rem;
+    opacity: 0.95;
+}
+
+/* بطاقات اختيار السيارة */
+.car-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 20px 20px 8px 20px;
+    border-top: 4px solid;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+.car-card-1 { border-color: var(--speed-blue-light); }
+.car-card-2 { border-color: var(--speed-red); }
+
+.car-card h3 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 800;
+}
+.car-card-1 h3 { color: var(--speed-blue-light); }
+.car-card-2 h3 { color: var(--speed-red); }
+
+/* زر التحليل */
+div.stButton > button {
+    background: linear-gradient(90deg, var(--speed-red) 0%, var(--speed-blue) 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 0;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 6px 16px rgba(215,25,32,0.35);
+}
+div.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(30,111,235,0.45);
+    color: #fff;
+}
+
+/* ============================================
+   جدول المقارنة - نسخة احترافية عالمية المستوى
+   ============================================ */
+.compare-wrap {
+    direction: rtl;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+table.compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+    background: var(--card-bg);
+}
+table.compare-table thead th {
+    background: linear-gradient(135deg, var(--speed-blue) 0%, var(--speed-blue-light) 55%, var(--speed-red) 130%);
+    color: #fff;
+    padding: 18px 12px;
+    text-align: center;
+    font-size: 1.08rem;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+table.compare-table thead th.spec-col {
+    background: var(--dark-bg);
+    color: #cfd8ea;
+    border-left: 1px solid rgba(255,255,255,0.08);
+}
+table.compare-table thead th.car2-col {
+    background: linear-gradient(135deg, var(--speed-red-dark) 0%, var(--speed-red) 100%);
+}
+table.compare-table thead th.car1-col {
+    background: linear-gradient(135deg, var(--speed-blue) 0%, var(--speed-blue-light) 100%);
+}
+
+table.compare-table tbody tr {
+    transition: background-color 0.18s ease-in-out, transform 0.18s ease-in-out;
+}
+table.compare-table tbody tr:nth-child(even) td {
+    background: rgba(255,255,255,0.025);
+}
+table.compare-table tbody tr:hover td {
+    background: rgba(30,111,235,0.12);
+}
+table.compare-table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+table.compare-table td {
+    padding: 14px 12px;
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 0.98rem;
+    vertical-align: middle;
+}
+table.compare-table td.spec-cell {
+    text-align: right;
+    font-weight: 700;
+    background: rgba(255,255,255,0.035);
+    color: #c9d6ff;
+    border-left: 1px solid rgba(255,255,255,0.08);
+    white-space: nowrap;
+}
+
+/* تمييز أفضل قيمة في كل صف (اختياري - يضبط عبر كلاس winner-cell) */
+table.compare-table td.winner-cell {
+    color: #ffe9a8;
+    font-weight: 800;
+    position: relative;
+}
+table.compare-table td.winner-cell::after {
+    content: "★";
+    font-size: 0.75rem;
+    margin-right: 6px;
+    color: #ffd75e;
+}
+
+/* تجاوب للشاشات الصغيرة */
+@media (max-width: 640px) {
+    table.compare-table th, table.compare-table td {
+        padding: 10px 6px;
+        font-size: 0.85rem;
+    }
+}
+
+/* بطاقة الفائز */
+.winner-card {
+    background: linear-gradient(90deg, var(--speed-blue) 0%, var(--speed-red) 100%);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 22px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+}
+
+/* أقسام التقرير */
+.report-section {
+    background: var(--card-bg);
+    border-right: 5px solid var(--speed-blue-light);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    text-align: right;
+    direction: rtl;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.report-section h4 {
+    color: var(--speed-blue-light);
+    margin-top: 0;
+    font-weight: 800;
+}
+.report-section p {
+    color: #dfe4ea;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+.report-section.red-accent {
+    border-right-color: var(--speed-red);
+}
+.report-section.red-accent h4 {
+    color: var(--speed-red);
+}
+
+/* تذييل */
+.autoiq-footer {
+    text-align: center;
+    color: var(--muted-text);
+    font-size: 0.85rem;
+    margin-top: 30px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
