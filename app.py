@@ -3,7 +3,17 @@ import pandas as pd
 import os
 import json
 import re
+import textwrap
 from openai import OpenAI
+
+def md_html(html: str):
+    """
+    يعرض HTML عبر st.markdown بأمان.
+    Streamlit/Markdown يحوّل أي سطر يبدأ بـ 4 مسافات أو أكثر إلى
+    كتلة كود (code block) فيظهر الـ HTML كنص خام بدل تفسيره.
+    هذه الدالة تزيل الإزاحة الزائدة (dedent) قبل العرض لتفادي هذه المشكلة.
+    """
+    st.markdown(textwrap.dedent(html).strip(), unsafe_allow_html=True)
 
 # =========================================================
 # إعداد الصفحة
@@ -45,15 +55,12 @@ if os.path.exists(LOGO_PATH):
 else:
     st.info("لم يتم العثور على ملف الشعار logo.png في نفس مجلد التطبيق.")
 
-st.markdown(
-    """
+md_html("""
     <div class="autoiq-header">
         <h1>🚗 AutoIQ AI Expert</h1>
         <p>مقارنة تقنية ذكية بين السيارات مدعومة بالذكاء الاصطناعي</p>
     </div>
-    """,
-    unsafe_allow_html=True
-)
+""")
 
 # =========================================================
 # تحميل البيانات (ملف يحتوي فقط على الماركة والفئة)
@@ -197,56 +204,46 @@ def render_comparison_table(table_rows, car1_label, car2_label):
         car1_class = "winner-cell" if better == "car1" else ""
         car2_class = "winner-cell" if better == "car2" else ""
 
-        rows_html += f"""
-        <tr>
-            <td class="spec-cell">{spec}</td>
-            <td class="{car1_class}">{car1_val}</td>
-            <td class="{car2_class}">{car2_val}</td>
-        </tr>
-        """
+        rows_html += (
+            f'<tr>'
+            f'<td class="spec-cell">{spec}</td>'
+            f'<td class="{car1_class}">{car1_val}</td>'
+            f'<td class="{car2_class}">{car2_val}</td>'
+            f'</tr>'
+        )
 
-    table_html = f"""
-    <div class="compare-wrap">
-        <table class="compare-table">
-            <thead>
-                <tr>
-                    <th class="spec-col">المواصفة</th>
-                    <th class="car1-col">{car1_label}</th>
-                    <th class="car2-col">{car2_label}</th>
-                </tr>
-            </thead>
-            <tbody>
-                {rows_html}
-            </tbody>
-        </table>
-    </div>
-    """
-    st.markdown(table_html, unsafe_allow_html=True)
+    table_html = (
+        f'<div class="compare-wrap">'
+        f'<table class="compare-table">'
+        f'<thead><tr>'
+        f'<th class="spec-col">المواصفة</th>'
+        f'<th class="car1-col">{car1_label}</th>'
+        f'<th class="car2-col">{car2_label}</th>'
+        f'</tr></thead>'
+        f'<tbody>{rows_html}</tbody>'
+        f'</table>'
+        f'</div>'
+    )
+    md_html(table_html)
 
 
 def render_report_section(title, content, red_accent=False):
     accent_class = "red-accent" if red_accent else ""
-    st.markdown(
-        f"""
+    md_html(f"""
         <div class="report-section {accent_class}">
             <h4>{title}</h4>
             <p>{content}</p>
         </div>
-        """,
-        unsafe_allow_html=True
-    )
+    """)
 
 
 def render_winner_card(winner, reason):
-    st.markdown(
-        f"""
+    md_html(f"""
         <div class="winner-card">
             🏆 الأفضل: {winner}<br/>
             <span style="font-size:0.95rem; font-weight:500;">{reason}</span>
         </div>
-        """,
-        unsafe_allow_html=True
-    )
+    """)
 
 # =========================================================
 # السنوات
@@ -343,11 +340,8 @@ if st.button("⚡ ابدأ التحليل", use_container_width=True):
         except Exception as e:
             st.error(f"حدث خطأ أثناء التحليل:\n{e}")
 
-st.markdown(
-    """
+md_html("""
     <div class="autoiq-footer">
         AutoIQ AI Expert — مدعوم بواسطة Groq &amp; Llama 3.3
     </div>
-    """,
-    unsafe_allow_html=True
-)
+""")
